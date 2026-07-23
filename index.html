@@ -72,7 +72,8 @@
   .hero h1{font-family:'Playfair Display',Georgia,serif;font-weight:600;
     font-size:clamp(42px,6.6vw,86px);max-width:16ch;margin:28px 0 0;letter-spacing:-.01em;line-height:1.05}
   .hero h1 em{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;color:#5b86ff;letter-spacing:0}
-  .hero p.lead{font-size:clamp(17px,1.9vw,21px);color:rgba(255,255,255,.74);max-width:54ch;margin:26px 0 36px;font-weight:400}
+  .hero p.lead{font-size:clamp(20px,2.3vw,25px);color:rgba(255,255,255,.86);max-width:54ch;margin:26px 0 14px;font-weight:400;line-height:1.5}
+  .hero .lead-sub{font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.55);max-width:52ch;margin:0 0 34px}
   .hero p.lead strong{color:#fff;font-weight:600}
   .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 
@@ -223,6 +224,17 @@
   .guarantee{display:flex;align-items:flex-start;gap:10px;margin-top:14px;font-size:14px;color:var(--muted)}
   .guarantee .g-ic{flex:0 0 auto;width:22px;height:22px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
   .guarantee strong{color:var(--ink)}
+  .guar-card{margin-top:22px;border:1px solid rgba(0,79,255,.22);border-radius:18px;padding:28px 30px;background:linear-gradient(180deg,rgba(0,79,255,.05),transparent);display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start}
+  .guar-badge{width:54px;height:54px;border-radius:50%;background:rgba(0,79,255,.1);display:flex;align-items:center;justify-content:center;flex:none}
+  .guar-badge svg{width:28px;height:28px;color:var(--blue)}
+  .guar-card h3{font-family:'Playfair Display',serif;font-size:1.4rem;margin:0 0 6px;color:var(--ink)}
+  .guar-intro{color:var(--muted);font-size:15px;line-height:1.6;margin:0 0 16px}
+  .guar-list{display:grid;gap:12px}
+  .guar-item{display:flex;gap:12px;align-items:flex-start}
+  .guar-item .gi-ic{flex:0 0 22px;width:22px;height:22px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;margin-top:1px}
+  .guar-item div{font-size:14.5px;line-height:1.55;color:var(--ink)}
+  .guar-item span{color:var(--muted)}
+  @media(max-width:560px){.guar-card{grid-template-columns:1fr;gap:16px}}
 
   /* steps (dark) */
   .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:54px}
@@ -401,13 +413,40 @@
     justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card)}
   .sales-bar p{font-size:14.5px;color:var(--muted)}
   .sales-bar strong{color:var(--ink)}
+  /* Grand Slam — Pain + Solution */
+  .pain-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:6px}
+  @media(max-width:820px){.pain-cards{grid-template-columns:1fr}}
+  .pain-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 24px;position:relative;overflow:hidden}
+  .pain-card::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:#cc2b2b}
+  .pain-x{width:34px;height:34px;border-radius:50%;background:rgba(204,43,43,.1);color:#cc2b2b;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;margin-bottom:14px}
+  .pain-path{font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  .pain-card h3{font-family:'Playfair Display',serif;font-size:20px;line-height:1.28;color:var(--ink);margin-bottom:10px;font-weight:600}
+  .pain-card p{font-size:14px;line-height:1.6;color:var(--muted)}
+  .pain-toggle{margin-top:24px;display:inline-flex;align-items:center;gap:9px;cursor:pointer;background:none;border:1px solid var(--line);border-radius:999px;padding:13px 22px;font-family:'Space Grotesk',sans-serif;font-size:14px;color:var(--ink);font-weight:500;transition:.25s var(--ease);text-align:left}
+  .pain-toggle:hover{border-color:var(--ink)}
+  .pain-toggle .tgl-i{width:22px;height:22px;flex:0 0 22px;border-radius:50%;background:rgba(204,43,43,.1);color:#cc2b2b;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:12px}
+  .pain-full{max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
+  .pain-full.open{max-height:4000px}
+  .pain-full-inner{padding-top:22px}
+  .pain-groups{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  @media(max-width:760px){.pain-groups{grid-template-columns:1fr}}
+  .pain-group{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .pain-group h4{font-family:'Space Grotesk',sans-serif;font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--ink);margin:0 0 10px;display:flex;align-items:center;gap:8px}
+  .pain-group h4 .gn{color:#cc2b2b;font-weight:700}
+  .pain-group ul{list-style:none;margin:0;padding:0}
+  .pain-group li{font-size:13.5px;line-height:1.5;color:var(--muted);padding:5px 0 5px 20px;position:relative}
+  .pain-group li::before{content:"✕";position:absolute;left:0;top:6px;color:#cc2b2b;font-size:11px}
+  .sol-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:6px}
+  @media(max-width:820px){.sol-grid{grid-template-columns:1fr}}
+  .sol-item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 18px 18px 50px;position:relative;font-size:14.5px;line-height:1.5;color:var(--ink)}
+  .sol-item::before{content:"✓";position:absolute;left:16px;top:16px;width:24px;height:24px;border-radius:50%;background:var(--blue);color:#fff;font-size:13px;display:flex;align-items:center;justify-content:center;font-weight:700}
 </style>
 </head>
 <body>
 
 <header class="on-dark">
   <nav class="wrap">
-    <a href="#top" class="brand">Riverland<span class="dot"></span></a>
+    <a href="#top" class="brand">Riverland Studio<span class="dot"></span></a>
     <div class="nav-right">
       <div class="navlinks">
         <a href="#leistung" data-i18n="nav_service">Leistung</a>
@@ -433,7 +472,8 @@
         <div class="reveal">
           <span class="tag"><span class="num">01</span> <span data-i18n="hero_eyebrow">Riverland Studio</span></span>
           <h1 data-i18n="hero_h1">Verwandle deine Produkte, in mehr <em>Umsatz</em>.</h1>
-          <p class="lead" data-i18n="hero_lead">Zwischen deinem Produkt und dem Verkauf steht oft nur eins: <strong>ein schwaches Listing</strong>. Wir schaffen dir Listings, die aus Besuchern Käufer machen — Text und Verkaufsbilder, natives Deutsch, in zwei Werktagen.</p>
+          <p class="lead" data-i18n="hero_lead">„Meine Produkte verkaufen sich endlich so gut, wie sie sollten — <strong>auf Seite&nbsp;1 gefunden, angeklickt und gekauft</strong> — weil jedes Listing ein conversion-starkes Asset in nativem Deutsch ist. Und dafür musste ich nur <strong>ein Foto und ein paar Eckdaten</strong> schicken."</p>
+          <p class="lead-sub" data-i18n="hero_result">Das Ergebnis: Seite-1-Sichtbarkeit, höhere Conversion, Werbebudget, das sich endlich rechnet, ein Katalog wie der einer Premium-Marke, mehr Umsatz und mehr Zeit — und dein Listing bleibt vorne, ganz ohne ständiges Nachjustieren.</p>
           <div class="hero-cta">
             <a href="#platz" class="btn" data-i18n="hero_cta1">Platz anfragen</a>
             <a href="#leistung" class="btn ghost" data-i18n="hero_cta2">So funktioniert's</a>
@@ -510,6 +550,41 @@
     </div>
   </section>
 
+  <!-- PAIN — Grand Slam: the obstacles -->
+  <section class="block" id="problem">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="tag"><span class="num">02</span> <span data-i18n="pain_kicker">Das Problem</span></span>
+        <h2 class="head-h2" data-i18n="pain_h2">Drei Wege, ein Listing zu erstellen — alle drei lassen dich im Stich.</h2>
+        <p class="head-sub" data-i18n="pain_sub">Selbst machen, eine Agentur beauftragen oder ein Tool nutzen. Jeder Weg hat einen Haken, der dich jeden Tag Umsatz kostet.</p>
+      </div>
+      <div class="pain-cards reveal">
+        <div class="pain-card">
+          <div class="pain-x">✕</div>
+          <div class="pain-path" data-i18n="pain1_path">Selbst machen</div>
+          <h3 data-i18n="pain1_h">Du bräuchtest Copywriter, Designer, Übersetzer und SEO-Analyst — in einer Person, für jedes Produkt.</h3>
+          <p data-i18n="pain1_p">Titel, 5 Bullets, Beschreibung und 7 Bilder — pro Produkt. Mal deinen ganzen Katalog. Du kommst nie hinterher.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-x">✕</div>
+          <div class="pain-path" data-i18n="pain2_path">Agentur / Freelancer</div>
+          <h3 data-i18n="pain2_h">790 €+ pro Listing, Wochen Onboarding — und am Ende bewegt sich der Umsatz vielleicht trotzdem nicht.</h3>
+          <p data-i18n="pain2_p">Teuer, langsam, schon mal die Finger verbrannt — und verstehen die überhaupt deine Marke?</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-x">✕</div>
+          <div class="pain-path" data-i18n="pain3_path">Software / KI</div>
+          <h3 data-i18n="pain3_h">KI-Deutsch klingt in zwei Sekunden übersetzt — und deutsche Käufer sind sofort weg.</h3>
+          <p data-i18n="pain3_p">Generischer Output ohne deutsches Muttersprachler-Auge — prompten und korrigieren musst du am Ende doch selbst.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <button class="pain-toggle" id="painToggle" aria-expanded="false"><span class="tgl-i">✕</span> <span id="painToggleTxt" data-i18n="pain_toggle">Wir haben 40+ konkrete Probleme identifiziert. Klicken, um die ganze Liste zu sehen →</span></button>
+        <div class="pain-full" id="painFull"><div class="pain-full-inner"><div class="pain-groups" id="painGroups"></div></div></div>
+      </div>
+    </div>
+  </section>
+
   <!-- PROBLEM + BEFORE/AFTER — hidden at launch, restore once a case study is ready -->
   <section class="block" id="leistung-hidden" style="display:none" aria-hidden="true">
     <div class="wrap">
@@ -560,7 +635,7 @@
   <section class="block" id="leistung">
     <div class="wrap">
       <div class="reveal">
-        <span class="tag"><span class="num">02</span> <span data-i18n="del_kicker">Was du bekommst</span></span>
+        <span class="tag"><span class="num">03</span> <span data-i18n="del_kicker">Was du bekommst</span></span>
         <h2 class="head-h2" data-i18n="del_h2">Ein komplettes Listing — aus einer <em>Hand</em>.</h2>
       </div>
       <div class="grid reveal">
@@ -577,6 +652,25 @@
         <span data-i18n="bon2">Compliance-Check (GPSR)</span>
         <span data-i18n="bon3">Bildquellen-Dateien</span>
       </div>
+      <div class="reveal" style="margin-top:26px">
+        <button class="pain-toggle" id="benToggle" aria-expanded="false"><span class="tgl-i" style="background:rgba(0,79,255,.1);color:var(--blue)">+</span> <span id="benToggleTxt" data-i18n="ben_toggle">Alle Vorteile ansehen — was ein starkes Listing für dich löst →</span></button>
+        <div class="pain-full" id="benFull"><div class="pain-full-inner">
+          <div class="sol-grid">
+            <div class="sol-item" data-i18n="sol1">Keyword-Recherche für dich erledigt — die richtigen deutschen Suchbegriffe, die ranken.</div>
+            <div class="sol-item" data-i18n="sol2">Seite-1-Titel, für dich geschrieben — regelkonform und klickstark.</div>
+            <div class="sol-item" data-i18n="sol3">5 Nutzen-Bullets, done-for-you — jede beantwortet eine Kauffrage.</div>
+            <div class="sol-item" data-i18n="sol4">Reiche deutsche Beschreibung + A+-Struktur — ohne ein Wort selbst zu schreiben.</div>
+            <div class="sol-item" data-i18n="sol5">Jedes Listing liest sich wie natives Deutsch — deutsche Endkontrolle auf jedem Text.</div>
+            <div class="sol-item" data-i18n="sol6">7 Premium-Bilder + Infografiken — ohne Designer und ohne Fotograf.</div>
+            <div class="sol-item" data-i18n="sol7">Der ganze Katalog auf einem Premium-Standard — schnell und konsistent.</div>
+            <div class="sol-item" data-i18n="sol8">Automatisch aktuell zu Amazons Regeln gehalten (Pflege-Abo).</div>
+            <div class="sol-item" data-i18n="sol9">Beweis an deinem eigenen Produkt — bevor du dich bindest.</div>
+            <div class="sol-item" data-i18n="sol10">Alles aus 2 Minuten Input — ein Foto und ein paar Eckdaten.</div>
+            <div class="sol-item" data-i18n="sol11">Verkaufsfertig in 2 Werktagen — hochladefertig geliefert.</div>
+            <div class="sol-item" data-i18n="sol12">Sichtbares Vorher/Nachher — du siehst den Unterschied schwarz auf weiß.</div>
+          </div>
+        </div></div>
+      </div>
     </div>
   </section>
 
@@ -584,7 +678,7 @@
   <section class="block on-dark" id="ablauf">
     <div class="wrap">
       <div class="reveal">
-        <span class="tag"><span class="num">03</span> <span data-i18n="how_kicker">Der Ablauf</span></span>
+        <span class="tag"><span class="num">04</span> <span data-i18n="how_kicker">Der Ablauf</span></span>
         <h2 class="head-h2" data-i18n="how_h2">Drei Schritte. Dein Aufwand: zwei <em>Minuten</em>.</h2>
       </div>
       <div class="steps">
@@ -599,7 +693,7 @@
   <section class="block" id="warum">
     <div class="wrap">
       <div class="reveal">
-        <span class="tag"><span class="num">04</span> <span data-i18n="why_kicker">Warum Riverland</span></span>
+        <span class="tag"><span class="num">05</span> <span data-i18n="why_kicker">Warum Riverland</span></span>
         <h2 class="head-h2" data-i18n="why_h2">Maßgeschneidert — nicht von der <em>Stange</em>.</h2>
         <p class="head-sub" data-i18n="why_sub">Jedes Listing entsteht individuell für dein Produkt und deine Marke. Mit über 7 Jahren Erfahrung im Erstellen von Produktlistings für Amazon.de wissen wir, wie ein Listing lesen muss, damit in Deutschland gekauft wird.</p>
       </div>
@@ -657,9 +751,23 @@
   <section class="block" id="preise">
     <div class="wrap">
       <div class="reveal">
-        <span class="tag"><span class="num">05</span> <span data-i18n="pr_kicker">Preise & Buchung</span></span>
+        <span class="tag"><span class="num">06</span> <span data-i18n="pr_kicker">Preise & Buchung</span></span>
         <h2 class="head-h2" data-i18n="pr_h2">Direkt buchen — oder erst <em>testen</em>.</h2>
-        <p class="head-sub" data-i18n="pr_sub">Transparente Staffelpreise pro Listing: je mehr Listings, desto günstiger. Noch unsicher? Starte mit einem einzelnen Trial-Listing.</p>
+        <p class="head-sub" data-i18n="pr_sub">Transparente Staffelpreise pro Listing: je mehr Listings, desto effizienter für alle. Noch unsicher? Starte mit einem einzelnen Trial-Listing.</p>
+      </div>
+      <div class="guar-card reveal">
+        <div class="guar-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div>
+          <h3 data-i18n="guar_h">Das Risiko liegt bei uns.</h3>
+          <p class="guar-intro" data-i18n="guar_intro">Du sollst dich sicher fühlen — deshalb geben wir dir fünf klare Garantien:</p>
+          <div class="guar-list">
+            <div class="guar-item"><span class="gi-ic">✓</span><div><strong data-i18n="guar1_t">Risikofrei-Muster.</strong> <span data-i18n="guar1_p">Für 99 € bauen wir ein komplettes Listing an deinem eigenen Produkt — hochladefertig. Willst du weitermachen, rechnen wir die 99 € voll an. Willst du nicht, gehört das fertige Listing trotzdem dir: kein Abo, keine Verpflichtung. Du kannst dabei nur gewinnen.</span></div></div>
+            <div class="guar-item"><span class="gi-ic">✓</span><div><strong data-i18n="guar2_t">Muttersprache-Garantie.</strong> <span data-i18n="guar2_p">Findet je ein deutscher Muttersprachler, dass dein Text übersetzt klingt, schreiben wir ihn kostenlos neu — so oft, bis er sich native anfühlt.</span></div></div>
+            <div class="guar-item"><span class="gi-ic">✓</span><div><strong data-i18n="guar3_t">Freigabe-Garantie.</strong> <span data-i18n="guar3_p">Wir überarbeiten Text und Bilder kostenlos, bis du das Listing freigibst — ohne Limit an Korrekturschleifen.</span></div></div>
+            <div class="guar-item"><span class="gi-ic">✓</span><div><strong data-i18n="guar4_t">Besser-als-vorher-Garantie.</strong> <span data-i18n="guar4_p">Schlägt dein neues Listing dein altes nicht bei Klickrate oder Conversion, optimieren wir innerhalb von 30 Tagen kostenlos weiter — solange Preis und Traffic stabil bleiben und du uns die Zahlen teilst.</span></div></div>
+            <div class="guar-item"><span class="gi-ic">✓</span><div><strong data-i18n="guar5_t">Immer-aktuell-Garantie.</strong> <span data-i18n="guar5_p">Für jedes Listing aus einem Paket (Starter, Growth, Scale) inklusive: Fällt es bei Ranking oder Benchmarks zurück, erkennen wir das und stellen dir das Update innerhalb von 5 Werktagen kostenlos zur Verfügung.</span></div></div>
+          </div>
+        </div>
       </div>
       <div class="price-grid reveal">
         <div class="tier">
@@ -704,10 +812,6 @@
         <span><strong data-i18n="trial_bar_q">Lieber erst testen?</strong> <span data-i18n="trial_bar_p">1 Trial-Listing für €99 — wird bei deiner ersten Bestellung angerechnet.</span></span>
         <button type="button" class="btn small" data-book="Trial (1 Listing)" data-i18n="book_trial">Trial buchen</button>
       </div>
-      <div class="guarantee reveal">
-        <span class="g-ic">✓</span>
-        <span data-i18n="gar_txt"><strong>Risikofrei:</strong> Gefällt dir das Muster nicht, zahlst du nichts. Dazu: Muttersprache-Garantie und Überarbeitung bis zur Freigabe.</span>
-      </div>
       <div class="sales-bar reveal">
         <p><strong data-i18n="sales_q">Mehr als 20 Listings?</strong> <span data-i18n="sales_p">Für 50, 100 oder laufende Volumina machen wir dir ein individuelles Angebot.</span></p>
         <a href="mailto:office@riverland-int.com?subject=Anfrage%20Volumen%20(50%2B%20Listings)" class="btn ghost" data-i18n="sales_btn">Sales kontaktieren</a>
@@ -719,7 +823,7 @@
   <section class="block on-dark" id="platz">
     <div class="wrap">
       <div class="reveal">
-        <span class="tag"><span class="num">06</span> <span data-i18n="req_kicker">Freie Plätze</span></span>
+        <span class="tag"><span class="num">07</span> <span data-i18n="req_kicker">Freie Plätze</span></span>
         <h2 class="head-h2" data-i18n="req_h2">Sichere dir einen der wenigen <em>Plätze</em>.</h2>
         <p class="head-sub" data-i18n="req_sub">Wir nehmen pro Monat nur <span class="hl" data-slot-free></span> neue Kunden an — weil jedes Listing durch unsere deutsche Endkontrolle läuft. So bekommt jedes Listing die Qualität, die es verdient. Vergeben wird in der Reihenfolge der Anfragen.</p>
       </div>
@@ -755,7 +859,7 @@
             <div class="field">
               <label data-i18n="f_paket">Gewünschtes Paket</label>
               <select name="paket" id="paketSel">
-                <option value="Noch unentschlossen" data-i18n="f_paket_o0">Noch unentschlossen</option>
+                <option value="Empfehlung erwünscht" data-i18n="f_paket_o0">Empfehlung fürs passende Paket</option>
                 <option value="Trial (1 Listing)" data-i18n="f_paket_o1">Trial – 1 Listing (€99)</option>
                 <option value="Starter (5 Listings)" data-i18n="f_paket_o2">Starter – 5 Listings</option>
                 <option value="Growth (10 Listings)" data-i18n="f_paket_o3">Growth – 10 Listings</option>
@@ -879,20 +983,64 @@ const I18N = {
   de:{
     nav_service:"Leistung",nav_how:"Ablauf",nav_why:"Warum wir",nav_pricing:"Preise",nav_contact:"Kontakt",nav_cta:"Platz anfragen",
     pr_kicker:"Preise & Buchung",pr_h2:"Direkt buchen — oder erst <em>testen</em>.",
-    pr_sub:"Transparente Staffelpreise pro Listing: je mehr Listings, desto günstiger. Noch unsicher? Starte mit einem einzelnen Trial-Listing.",
+    pr_sub:"Transparente Staffelpreise pro Listing: je mehr Listings, desto effizienter für alle. Noch unsicher? Starte mit einem einzelnen Trial-Listing.",
     badge_popular:"Beliebt",per:"/ Listing",total_s:"gesamt",book:"Buchen",book_trial:"Trial buchen",
     trial_bar_q:"Lieber erst testen?",trial_bar_p:"1 Trial-Listing für €99 — wird bei deiner ersten Bestellung angerechnet.",
     bon_h:"Obendrauf inklusive",bon1:"Wettbewerbs-Teardown",bon2:"Compliance-Check (GPSR)",bon3:"Bildquellen-Dateien",
     gar_txt:"<strong>Risikofrei:</strong> Gefällt dir das Muster nicht, zahlst du nichts. Dazu: Muttersprache-Garantie und Überarbeitung bis zur Freigabe.",
+    guar_h:"Das Risiko liegt bei uns.",
+    guar_intro:"Du sollst dich sicher fühlen — deshalb geben wir dir fünf klare Garantien:",
+    guar1_t:"Risikofrei-Muster.",
+    guar1_p:"Für 99 € bauen wir ein komplettes Listing an deinem eigenen Produkt — hochladefertig. Willst du weitermachen, rechnen wir die 99 € voll an. Willst du nicht, gehört das fertige Listing trotzdem dir: kein Abo, keine Verpflichtung. Du kannst dabei nur gewinnen.",
+    guar2_t:"Muttersprache-Garantie.",
+    guar2_p:"Findet je ein deutscher Muttersprachler, dass dein Text übersetzt klingt, schreiben wir ihn kostenlos neu — so oft, bis er sich native anfühlt.",
+    guar3_t:"Freigabe-Garantie.",
+    guar3_p:"Wir überarbeiten Text und Bilder kostenlos, bis du das Listing freigibst — ohne Limit an Korrekturschleifen.",
+    guar4_t:"Besser-als-vorher-Garantie.",
+    guar4_p:"Schlägt dein neues Listing dein altes nicht bei Klickrate oder Conversion, optimieren wir innerhalb von 30 Tagen kostenlos weiter — solange Preis und Traffic stabil bleiben und du uns die Zahlen teilst.",
+    guar5_t:"Immer-aktuell-Garantie.",
+    guar5_p:"Für jedes Listing aus einem Paket (Starter, Growth, Scale) inklusive: Fällt es bei Ranking oder Benchmarks zurück, erkennen wir das und stellen dir das Update innerhalb von 5 Werktagen kostenlos zur Verfügung.",
     t_s_n:"Starter",t_s_s:"5 Listings",t_g_n:"Growth",t_g_s:"10 Listings",t_sc_n:"Scale",t_sc_s:"20 Listings",
     li_copy:"Titel, Bullets & Beschreibung",li_imgs:"Sieben Premium-Bilder",li_research:"Keyword-Recherche + deutsche QA",
     sales_q:"Mehr als 20 Listings?",sales_p:"Für 50, 100 oder laufende Volumina machen wir dir ein individuelles Angebot.",sales_btn:"Sales kontaktieren",
-    f_paket:"Gewünschtes Paket",f_paket_o0:"Noch unentschlossen",f_paket_o1:"Trial – 1 Listing (€99)",f_paket_o2:"Starter – 5 Listings",f_paket_o3:"Growth – 10 Listings",f_paket_o4:"Scale – 20 Listings",f_paket_o5:"50+ (individuell)",
+    f_paket:"Gewünschtes Paket",f_paket_o0:"Empfehlung fürs passende Paket",f_paket_o1:"Trial – 1 Listing (€99)",f_paket_o2:"Starter – 5 Listings",f_paket_o3:"Growth – 10 Listings",f_paket_o4:"Scale – 20 Listings",f_paket_o5:"50+ (individuell)",
     hero_eyebrow:"Riverland Studio",anim_label:"Aus Foto + Eckdaten wird ein Listing",
     ck_title:"Titel",ck_bullets:"Bullet Points",ck_images:"Bilder",ck_desc:"Beschreibung",
     svc_h:"Und danach: laufend optimiert.",svc1_t:"SEO & Keyword-Optimierung",svc1_p:"Die richtigen Keywords — sichtbar im Text und im Backend.",svc2_t:"Monatliche Pflege & Updates",svc2_p:"Wir prüfen dein Listing jeden Monat und aktualisieren Text, Keywords und Bilder, wenn nötig.",svc_badge:"Pflege-Abo · feste monatliche Pauschale",
     hero_h1:"Verwandle deine Produkte, in mehr <em>Umsatz</em>.",
-    hero_lead:'Zwischen deinem Produkt und dem Verkauf steht oft nur eins: <strong>ein schwaches Listing</strong>. Wir schaffen dir Listings, die aus Besuchern Käufer machen — Text und Verkaufsbilder, natives Deutsch, in zwei Werktagen.',
+    hero_lead:'„Meine Produkte verkaufen sich endlich so gut, wie sie sollten — <strong>auf Seite&nbsp;1 gefunden, angeklickt und gekauft</strong> — weil jedes Listing ein conversion-starkes Asset in nativem Deutsch ist. Und dafür musste ich nur <strong>ein Foto und ein paar Eckdaten</strong> schicken."',
+    hero_result:'Das Ergebnis: Seite-1-Sichtbarkeit, höhere Conversion, Werbebudget, das sich endlich rechnet, ein Katalog wie der einer Premium-Marke, mehr Umsatz und mehr Zeit — und dein Listing bleibt vorne, ganz ohne ständiges Nachjustieren.',
+    pain_kicker:"Das Problem",
+    pain_h2:"Drei Wege, ein Listing zu erstellen — alle drei lassen dich im Stich.",
+    pain_sub:"Selbst machen, eine Agentur beauftragen oder ein Tool nutzen. Jeder Weg hat einen Haken, der dich jeden Tag Umsatz kostet.",
+    pain1_path:"Selbst machen",
+    pain1_h:"Du bräuchtest Copywriter, Designer, Übersetzer und SEO-Analyst — in einer Person, für jedes Produkt.",
+    pain1_p:"Titel, 5 Bullets, Beschreibung und 7 Bilder — pro Produkt. Mal deinen ganzen Katalog. Du kommst nie hinterher.",
+    pain2_path:"Agentur / Freelancer",
+    pain2_h:"790 €+ pro Listing, Wochen Onboarding — und am Ende bewegt sich der Umsatz vielleicht trotzdem nicht.",
+    pain2_p:"Teuer, langsam, schon mal die Finger verbrannt — und verstehen die überhaupt deine Marke?",
+    pain3_path:"Software / KI",
+    pain3_h:"KI-Deutsch klingt in zwei Sekunden übersetzt — und deutsche Käufer sind sofort weg.",
+    pain3_p:"Generischer Output ohne deutsches Muttersprachler-Auge — prompten und korrigieren musst du am Ende doch selbst.",
+    pain_toggle:"Wir haben 40+ konkrete Probleme identifiziert. Klicken, um die ganze Liste zu sehen →",
+    pain_toggle_close:"Liste schließen ↑",
+    ben_toggle:"Alle Vorteile ansehen — was ein starkes Listing für dich löst →",
+    ben_toggle_close:"Vorteile ausblenden ↑",
+    sol_kicker:"Die Lösung",
+    sol_h2:"Ein Weg, der jeden dieser Haken auflöst.",
+    sol_sub:"Du schickst ein Foto und ein paar Eckdaten. Wir erledigen den Rest — komplett für dich, verkaufsfertig in zwei Werktagen.",
+    sol1:"Keyword-Recherche für dich erledigt — die richtigen deutschen Suchbegriffe, die ranken.",
+    sol2:"Seite-1-Titel, für dich geschrieben — regelkonform und klickstark.",
+    sol3:"5 Nutzen-Bullets, done-for-you — jede beantwortet eine Kauffrage.",
+    sol4:"Reiche deutsche Beschreibung + A+-Struktur — ohne ein Wort selbst zu schreiben.",
+    sol5:"Jedes Listing liest sich wie natives Deutsch — deutsche Endkontrolle auf jedem Text.",
+    sol6:"7 Premium-Bilder + Infografiken — ohne Designer und ohne Fotograf.",
+    sol7:"Der ganze Katalog auf einem Premium-Standard — schnell und konsistent.",
+    sol8:"Automatisch aktuell zu Amazons Regeln gehalten (Pflege-Abo).",
+    sol9:"Beweis an deinem eigenen Produkt — bevor du dich bindest.",
+    sol10:"Alles aus 2 Minuten Input — ein Foto und ein paar Eckdaten.",
+    sol11:"Verkaufsfertig in 2 Werktagen — hochladefertig geliefert.",
+    sol12:"Sichtbares Vorher/Nachher — du siehst den Unterschied schwarz auf weiß.",
     hero_cta1:"Platz anfragen",hero_cta2:"So funktioniert's",
     slots_live:"Begrenzte Kapazität · laufend aktualisiert",
     slots_note:"Wir nehmen pro Monat nur eine begrenzte Zahl neuer Kunden an — weil jedes Listing durch unsere deutsche Endkontrolle läuft.",
@@ -956,20 +1104,64 @@ const I18N = {
   en:{
     nav_service:"Service",nav_how:"Process",nav_why:"Why us",nav_pricing:"Pricing",nav_contact:"Contact",nav_cta:"Request a slot",
     pr_kicker:"Pricing & booking",pr_h2:"Book directly — or <em>test</em> first.",
-    pr_sub:"Transparent per-listing tiers: the more listings, the lower the price. Not sure yet? Start with a single trial listing.",
+    pr_sub:"Transparent per-listing tiers: the more listings, the more efficient for everyone. Not sure yet? Start with a single trial listing.",
     badge_popular:"Popular",per:"/ listing",total_s:"total",book:"Book",book_trial:"Book trial",
     trial_bar_q:"Prefer to test first?",trial_bar_p:"1 trial listing for €99 — credited to your first order.",
     bon_h:"Included on top",bon1:"Competitor teardown",bon2:"Compliance check (GPSR)",bon3:"Source image files",
     gar_txt:"<strong>Risk-free:</strong> if you don't like the sample, you pay nothing. Plus: native-German guarantee and revisions until you approve.",
+    guar_h:"The risk is on us.",
+    guar_intro:"You should feel safe — so we give you five clear guarantees:",
+    guar1_t:"Risk-free sample.",
+    guar1_p:"For €99 we build a complete listing on your own product — upload-ready. Want to continue? We credit the full €99. If not, the finished listing is still yours: no subscription, no commitment. You can only win.",
+    guar2_t:"Native-German guarantee.",
+    guar2_p:"If a German native ever finds your copy reads like a translation, we rewrite it free — as often as it takes to sound native.",
+    guar3_t:"Approval guarantee.",
+    guar3_p:"We revise copy and images free until you approve the listing — no cap on revision rounds.",
+    guar4_t:"Better-than-before guarantee.",
+    guar4_p:"If your new listing doesn't beat your old one on click-through or conversion, we keep optimizing free within 30 days — as long as price and traffic stay steady and you share the numbers.",
+    guar5_t:"Always-current guarantee.",
+    guar5_p:"Included with every listing from a package (Starter, Growth, Scale): if it slips on ranking or benchmarks, we catch it and provide the update free within 5 business days.",
     t_s_n:"Starter",t_s_s:"5 listings",t_g_n:"Growth",t_g_s:"10 listings",t_sc_n:"Scale",t_sc_s:"20 listings",
     li_copy:"Title, bullets & description",li_imgs:"Seven premium images",li_research:"Keyword research + German QA",
     sales_q:"More than 20 listings?",sales_p:"For 50, 100 or ongoing volume we'll prepare a custom quote.",sales_btn:"Contact sales",
-    f_paket:"Preferred package",f_paket_o0:"Undecided",f_paket_o1:"Trial – 1 listing (€99)",f_paket_o2:"Starter – 5 listings",f_paket_o3:"Growth – 10 listings",f_paket_o4:"Scale – 20 listings",f_paket_o5:"50+ (custom)",
+    f_paket:"Preferred package",f_paket_o0:"Recommend the right package",f_paket_o1:"Trial – 1 listing (€99)",f_paket_o2:"Starter – 5 listings",f_paket_o3:"Growth – 10 listings",f_paket_o4:"Scale – 20 listings",f_paket_o5:"50+ (custom)",
     hero_eyebrow:"Riverland Studio",anim_label:"From photo + specs to a finished listing",
     ck_title:"Title",ck_bullets:"Bullet points",ck_images:"Images",ck_desc:"Description",
     svc_h:"And after that: continuously optimized.",svc1_t:"SEO & keyword optimization",svc1_p:"The right keywords — visible in the copy and in the backend.",svc2_t:"Monthly care & updates",svc2_p:"We review your listing every month and update copy, keywords and images when needed.",svc_badge:"Care plan · flat monthly fee",
     hero_h1:"Turn your products into more <em>revenue</em>.",
-    hero_lead:"Between your product and the sale there's often just one thing: <strong>a weak listing</strong>. We create listings that turn visitors into buyers — copy and sales images, native German, in two business days.",
+    hero_lead:"“My products finally sell as well as they should — <strong>found on page&nbsp;1, clicked, and bought</strong> — because every listing is a native-German, conversion-built asset. And I got there by sending <strong>a photo and a few facts</strong>.”",
+    hero_result:"The result: page-1 visibility, higher conversion, ad spend that finally pays, a catalog that looks like a premium brand, more revenue and time back — and it stays winning without you watching.",
+    pain_kicker:"The problem",
+    pain_h2:"Three ways to get a listing done — all three let you down.",
+    pain_sub:"Do it yourself, hire an agency, or use a tool. Each path has a catch that costs you sales every day.",
+    pain1_path:"Do it yourself",
+    pain1_h:"You'd need a copywriter, designer, translator and SEO analyst — in one person, for every product.",
+    pain1_p:"Title, 5 bullets, description and 7 images — per product. Multiply by your whole catalog. You never catch up.",
+    pain2_path:"Agency / freelancer",
+    pain2_h:"€790+ per listing, weeks of onboarding — and in the end sales may still not move.",
+    pain2_p:"Expensive, slow, been burned before — and do they even get your brand?",
+    pain3_path:"Software / AI",
+    pain3_h:"AI German reads translated within two seconds — and German buyers are gone instantly.",
+    pain3_p:"Generic output with no native-German eye — and you still end up prompting and fixing it yourself.",
+    pain_toggle:"We identified 40+ specific problems. Click to see the full list →",
+    pain_toggle_close:"Close list ↑",
+    ben_toggle:"See all the benefits — what a strong listing solves for you →",
+    ben_toggle_close:"Hide benefits ↑",
+    sol_kicker:"The solution",
+    sol_h2:"One path that removes every one of these hooks.",
+    sol_sub:"You send a photo and a few facts. We handle the rest — fully done for you, sales-ready in two business days.",
+    sol1:"Keyword research done for you — the right German search terms that rank.",
+    sol2:"A page-1 title, written for you — compliant and click-worthy.",
+    sol3:"5 benefit bullets, done for you — each answers a buying question.",
+    sol4:"A rich German description + A+ structure — without writing a word yourself.",
+    sol5:"Every listing reads like native German — German QA on every text.",
+    sol6:"7 premium images + infographics — no designer and no photographer.",
+    sol7:"Your whole catalog to one premium standard — fast and consistent.",
+    sol8:"Kept current with Amazon's rules automatically (care plan).",
+    sol9:"Proof on your own product — before you commit.",
+    sol10:"All from 2 minutes of input — a photo and a few facts.",
+    sol11:"Sales-ready in 2 business days — delivered upload-ready.",
+    sol12:"A visible before/after — you see the difference in black and white.",
     hero_cta1:"Request a slot",hero_cta2:"See how it works",
     slots_live:"Limited capacity · updated continuously",
     slots_note:"We take on only a limited number of new clients each month — because every listing passes our German endcontrol.",
@@ -1071,11 +1263,74 @@ function setLang(lang){
   document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===lang));
   renderSlots(lang);
   bindPrivacy();
+  renderPains(lang);
+  var _pf=document.getElementById('painFull'),_pt=document.getElementById('painToggleTxt');
+  if(_pf&&_pt&&_pf.classList.contains('open'))_pt.textContent=I18N[lang].pain_toggle_close;
+  var _bf=document.getElementById('benFull'),_bt=document.getElementById('benToggleTxt');
+  if(_bf&&_bt&&_bf.classList.contains('open'))_bt.textContent=I18N[lang].ben_toggle_close;
   try{localStorage.setItem('rl_lang',lang)}catch(e){}
 }
+/* Grand Slam — 40+ obstacles data + toggle */
+const PAINS={
+ de:[
+  ["Keyword-Recherche",["Technisch — du kennst die Tools nicht","Du wählst die falschen, nicht-deutschen Begriffe","Stunden pro Produkt","Tools lohnen sich bei deiner Größe nicht"]],
+  ["Titel",["Du bist kein Copywriter","Rankt nicht und holt den Klick nicht","Du kennst Amazons Regeln nicht","Das Zeichenlimit optimal zu nutzen ist eine Kunst","Ein schwacher Titel deckelt den Umsatz — bei jedem Preis"]],
+  ["Bullet Points",["Features in Nutzen zu übersetzen ist schwer","Liest sich wie ein Datenblatt","Tagelang über den ganzen Katalog"]],
+  ["Beschreibung & A+",["Überzeugendes Schreiben plus Design nötig","Flach, kein Vertrauen, keine Einwandbehandlung"]],
+  ["Natives Deutsch",["Käufer springen bei übersetzt klingendem Deutsch in 2 Sekunden ab","Du kannst dein eigenes Deutsch nicht beurteilen","Maschinenübersetzung versagt","Einen Muttersprachler einzustellen ist Aufwand","Schlechtes Deutsch = billig wirkende Marke"]],
+  ["Bilder",["Design und Fotobearbeitung — der schwerste Teil","7 Bilder pro Produkt ist enorm viel","Sie stoppen den Scroll nicht, wirken amateurhaft","Foto- und Design-Agenturen kosten ein Vermögen"]],
+  ["Ganzer Katalog",["Dutzende bis Hunderte Produkte","Konsistenz Stück für Stück unmöglich","Die Qualität driftet ab"]],
+  ["Aktuell halten",["Keine Zeit zum Überwachen und Re-Optimieren","Listings veralten, fallen hinter Amazons Regeln","Veraltete Listings bluten still Umsatz"]],
+  ["Agentur & Freelancer",["Agenturen teuer und unbewiesen","Freelancer sind Glückssache — schon verbrannt","Einen Dienstleister zu briefen ist selbst Arbeit","Onboarding dauert Wochen","Was, wenn ich zahle und der Umsatz bewegt sich nicht?","Verstehen die mein Produkt und meine Marke?"]],
+  ["Software & KI",["Generischer, austauschbarer Output","Kein deutsches Muttersprachler-Auge","Prompten und Korrigieren machst du am Ende selbst"]],
+  ["Erfolg messen",["Keine Sicht auf den tatsächlichen Lift","Kein klares Vorher/Nachher","Du weißt nie, ob sich die Investition gelohnt hat"]]
+ ],
+ en:[
+  ["Keyword research",["Technical — you don't know the tools","You pick the wrong, non-German terms","Hours per product","Tools aren't worth it at your size"]],
+  ["Title",["You're not a copywriter","Won't rank or earn the click","You don't know Amazon's rules","Using the character limit well is an art","A weak title caps sales — at any price"]],
+  ["Bullets",["Turning features into benefits is hard","Reads like a spec sheet","Days across the whole catalog"]],
+  ["Description & A+",["Needs persuasive writing plus design","Flat, no trust, no objection-handling"]],
+  ["Native German",["Buyers bounce on translated-sounding German in 2 seconds","You can't judge your own German","Machine translation fails","Hiring a native is a hassle","Bad German = cheap-looking brand"]],
+  ["Images",["Design and photo-editing — the hardest part","7 images per product is huge","They don't stop the scroll, look amateur","Photo and design agencies cost a fortune"]],
+  ["Whole catalog",["Dozens to hundreds of products","Consistency piecemeal is impossible","Quality drifts"]],
+  ["Keeping current",["No time to monitor and re-optimize","Listings go stale, fall behind Amazon's rules","Stale listings quietly bleed revenue"]],
+  ["Agency & freelancer",["Agencies pricey and unproven","Freelancers hit-or-miss — been burned","Briefing a vendor is itself work","Onboarding takes weeks","What if I pay and sales don't move?","Will they get my product and brand?"]],
+  ["Software & AI",["Generic, interchangeable output","No native-German eye","You still prompt and fix it yourself"]],
+  ["Measuring success",["No visibility into the actual lift","No clear before/after","You never know if the investment paid off"]]
+ ]
+};
+function renderPains(lang){
+  var g=document.getElementById('painGroups'); if(!g) return;
+  var data=PAINS[lang]||PAINS.de;
+  g.innerHTML=data.map(function(grp,i){
+    var n=('0'+(i+1)).slice(-2);
+    var lis=grp[1].map(function(t){return '<li>'+t+'</li>';}).join('');
+    return '<div class="pain-group"><h4><span class="gn">'+n+'</span> '+grp[0]+'</h4><ul>'+lis+'</ul></div>';
+  }).join('');
+}
+(function(){
+  var btn=document.getElementById('painToggle'), full=document.getElementById('painFull'), txt=document.getElementById('painToggleTxt');
+  if(!btn) return;
+  btn.addEventListener('click',function(){
+    var open=full.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+    var lang=document.documentElement.lang;
+    txt.textContent = open ? (I18N[lang].pain_toggle_close) : (I18N[lang].pain_toggle);
+  });
+})();
+(function(){
+  var btn=document.getElementById('benToggle'), full=document.getElementById('benFull'), txt=document.getElementById('benToggleTxt');
+  if(!btn) return;
+  btn.addEventListener('click',function(){
+    var open=full.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+    var lang=document.documentElement.lang;
+    txt.textContent = open ? (I18N[lang].ben_toggle_close) : (I18N[lang].ben_toggle);
+  });
+})();
 document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
 let startLang='de';
-try{startLang=localStorage.getItem('rl_lang')||((navigator.language||'de').startsWith('de')?'de':'en')}catch(e){}
+try{startLang=localStorage.getItem('rl_lang')||'de'}catch(e){}
 setLang(startLang);
 
 document.getElementById('yr').textContent=new Date().getFullYear();
