@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Impressum — Riverland International GmbH</title>
+<meta name="robots" content="index,follow" />
+<meta name="theme-color" content="#0A0A0B" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0A0B'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23004FFF'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+<style>
+  :root{--ink:#0A0A0B;--paper:#F5F4F0;--muted:#6c6c72;--blue:#004FFF;--line:#E4E2DB;--maxw:760px}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+  a{color:var(--blue)}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  header{background:var(--ink);color:#fff;padding:16px 0}
+  header .wrap{display:flex;align-items:center;justify-content:space-between}
+  .brand{font-family:'Playfair Display',serif;font-weight:600;font-size:20px;color:#fff;text-decoration:none;display:flex;align-items:center;gap:8px}
+  .brand .dot{width:8px;height:8px;border-radius:50%;background:var(--blue);margin-bottom:2px}
+  header a.back{color:rgba(255,255,255,.7);text-decoration:none;font-size:14px}
+  header a.back:hover{color:#fff}
+  main{padding:56px 0 40px}
+  h1{font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:clamp(30px,5vw,42px);letter-spacing:-.01em;margin-bottom:8px}
+  .lead{color:var(--muted);margin-bottom:36px}
+  h2{font-family:'Inter',sans-serif;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin:28px 0 8px}
+  p{margin-bottom:10px}
+  .block{padding:18px 0;border-top:1px solid var(--line)}
+  footer{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--muted);font-size:13.5px}
+  footer a{text-decoration:underline}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html">Riverland<span class="dot"></span></a>
+    <a class="back" href="index.html">← Zurück zur Startseite</a>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <h1>Impressum</h1>
+    <p class="lead">Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz).</p>
+
+    <div class="block">
+      <h2>Anbieter</h2>
+      <p>Riverland International GmbH<br/>Hangstraße 11<br/>21075 Hamburg<br/>Deutschland</p>
+    </div>
+
+    <div class="block">
+      <h2>Handelsregister</h2>
+      <p>HRB 187138 (Fall 1)<br/>Registergericht: Amtsgericht Hamburg</p>
+    </div>
+
+    <div class="block">
+      <h2>Vertreten durch</h2>
+      <p>Herr Pascal Weihrauch<br/>Frau Tham Nguyen</p>
+    </div>
+
+    <div class="block">
+      <h2>Kontakt</h2>
+      <p>Telefon: <a href="tel:+4915751110598">+49 (0)1575 111 0598</a><br/>E-Mail: <a href="mailto:office@riverland-int.com">office@riverland-int.com</a></p>
+    </div>
+
+    <div class="block">
+      <h2>Umsatzsteuer-ID</h2>
+      <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br/>DE369591654</p>
+    </div>
+
+    <div class="block">
+      <h2>Redaktionell verantwortlich</h2>
+      <p>Pascal Weihrauch<br/>Hangstraße 11, 21075 Hamburg</p>
+    </div>
+
+    <div class="block">
+      <h2>Verbraucherstreitbeilegung</h2>
+      <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="wrap">© <span id="yr"></span> Riverland International GmbH · <a href="datenschutz.html">Datenschutz</a> · Hamburg, Deutschland</div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

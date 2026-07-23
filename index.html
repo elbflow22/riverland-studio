@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Riverland — Listings, die verkaufen</title>
+<meta name="description" content="Riverland Studio: verkaufsstarke Amazon- und Shopify-Listings in nativem Deutsch — Text und Premium-Bildwelt. Begrenzte Plätze pro Monat." />
+<meta name="theme-color" content="#0A0A0B" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0A0B'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23004FFF'/%3E%3C/svg%3E" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:title" content="Riverland — Listings, die verkaufen" />
+<meta property="og:description" content="Verkaufsstarke Amazon- & Shopify-Listings in nativem Deutsch: Text und sieben Verkaufsbilder. Begrenzte Plätze pro Monat." />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@1&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#0A0A0B; --ink-2:#111114; --paper:#F5F4F0; --paper-2:#ECEAE3;
+    --card:#FFFFFF; --blue:#004FFF; --blue-2:#2e6bff; --muted:#6c6c72;
+    --muted-d:#9a9aa2; --line:#E4E2DB; --line-d:#26262d;
+    --maxw:1180px; --ease:cubic-bezier(.2,.7,.2,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--ink);
+    background:var(--paper);line-height:1.62;-webkit-font-smoothing:antialiased;font-size:16px}
+  .display{font-family:'Space Grotesk','Inter',sans-serif;font-weight:600;line-height:1.02;letter-spacing:-.03em}
+  h1,h2,h3{font-family:'Space Grotesk','Inter',sans-serif;font-weight:600;line-height:1.04;letter-spacing:-.025em}
+  em,.ital{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;letter-spacing:0}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+  @media(max-width:560px){.wrap{padding:0 22px}}
+
+  /* numbered label */
+  .tag{font-family:'Space Grotesk',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--muted);display:inline-flex;gap:12px;align-items:center}
+  .tag .num{color:var(--blue)}
+  .on-dark .tag{color:var(--muted-d)}
+
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;gap:9px;background:var(--blue);color:#fff;
+    padding:13px 24px;border-radius:6px;font-weight:600;font-size:14.5px;border:0;cursor:pointer;
+    font-family:'Space Grotesk',sans-serif;letter-spacing:-.01em;transition:.25s var(--ease)}
+  .btn:hover{background:#0040d6;transform:translateY(-2px)}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+  .btn.ghost:hover{background:var(--ink);color:#fff}
+  .on-dark .btn.ghost{color:#fff;border-color:rgba(255,255,255,.4)}
+  .on-dark .btn.ghost:hover{background:#fff;color:var(--ink);border-color:#fff}
+
+  /* header — solid hero-dark at top (blends with hero, text readable); translucent-dark on scroll */
+  header{position:sticky;top:0;z-index:60;background:var(--ink);border-bottom:1px solid transparent;
+    transition:background .3s var(--ease),border-color .3s var(--ease),backdrop-filter .3s var(--ease)}
+  header.scrolled{background:rgba(10,10,11,.82);backdrop-filter:saturate(140%) blur(14px);border-bottom-color:var(--line-d)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:21px;letter-spacing:-.02em;color:#fff;display:flex;align-items:center;gap:9px}
+  .brand .dot{width:8px;height:8px;border-radius:50%;background:var(--blue);display:inline-block;margin-bottom:2px}
+  .nav-right{display:flex;align-items:center;gap:22px}
+  .navlinks{display:flex;gap:30px;font-size:14px;color:rgba(255,255,255,.7);font-weight:500}
+  .navlinks a:hover{color:#fff}
+  .lang{display:flex;border:1px solid rgba(255,255,255,.22);border-radius:6px;overflow:hidden;font-family:'Space Grotesk',sans-serif}
+  .lang button{background:none;border:0;padding:7px 11px;cursor:pointer;color:rgba(255,255,255,.6);font-weight:600;font-size:12.5px;font-family:inherit;transition:.2s}
+  .lang button.on{background:#fff;color:var(--ink)}
+  @media(max-width:780px){.navlinks{display:none}}
+
+  /* hero */
+  .hero{background:var(--ink);color:#fff;position:relative;overflow:hidden;padding:100px 0 86px}
+  .hero::before{content:"";position:absolute;top:-30%;right:-10%;width:60%;height:120%;
+    background:radial-gradient(circle at 60% 40%,rgba(0,79,255,.22),transparent 60%);pointer-events:none}
+  .hero .wrap{position:relative}
+  .hero h1{font-family:'Playfair Display',Georgia,serif;font-weight:600;
+    font-size:clamp(42px,6.6vw,86px);max-width:16ch;margin:28px 0 0;letter-spacing:-.01em;line-height:1.05}
+  .hero h1 em{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;color:#5b86ff;letter-spacing:0}
+  .hero p.lead{font-size:clamp(17px,1.9vw,21px);color:rgba(255,255,255,.74);max-width:54ch;margin:26px 0 36px;font-weight:400}
+  .hero p.lead strong{color:#fff;font-weight:600}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+
+  /* slot gauge */
+  .slots{margin-top:46px;border:1px solid var(--line-d);border-radius:12px;padding:22px 24px;
+    background:rgba(255,255,255,.03);max-width:560px;display:flex;flex-direction:column;gap:14px}
+  .slots-top{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  .slots-live{display:inline-flex;align-items:center;gap:9px;font-size:13px;color:rgba(255,255,255,.66);font-weight:500}
+  .pulse{width:9px;height:9px;border-radius:50%;background:var(--blue);position:relative}
+  .pulse::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1px solid var(--blue);animation:pulse 2s infinite}
+  @keyframes pulse{0%{transform:scale(.6);opacity:.9}100%{transform:scale(1.8);opacity:0}}
+  .slots-count{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#fff}
+  .slots-count b{color:var(--blue);font-size:17px}
+  .gauge{display:flex;gap:7px}
+  .gauge .seg{flex:1;height:8px;border-radius:3px;background:rgba(255,255,255,.13);transition:.4s var(--ease)}
+  .gauge .seg.free{background:var(--blue)}
+  .slots-note{font-size:12.5px;color:rgba(255,255,255,.5)}
+
+  /* hero layout + build animation */
+  .hero-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:50px;align-items:center}
+  @media(max-width:960px){.hero-grid{grid-template-columns:1fr;gap:40px}}
+  .checklist{list-style:none;display:flex;flex-wrap:wrap;gap:10px 18px;margin:0 0 14px;padding:0;justify-content:space-between}
+  .checklist li{display:flex;align-items:center;gap:9px;font-family:'Space Grotesk',sans-serif;font-size:12.5px;color:rgba(255,255,255,.38);transition:color .4s var(--ease)}
+  .checklist li.done{color:#fff}
+  .ck-box{width:20px;height:20px;border-radius:6px;border:1.5px solid var(--line-d);flex:0 0 auto;position:relative;transition:.3s var(--ease)}
+  .checklist li.done .ck-box{background:var(--blue);border-color:var(--blue)}
+  .ck-box::after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg) scale(0);transition:transform .3s var(--ease)}
+  .checklist li.done .ck-box::after{transform:rotate(45deg) scale(1)}
+  .build{background:rgba(255,255,255,.04);border:1px solid var(--line-d);border-radius:14px;padding:16px;perspective:1400px}
+  .build:hover .b-divider .line::after,.build:hover .cursor{animation-play-state:paused}
+  .build-head{display:flex;align-items:center;gap:9px;font-family:'Space Grotesk',sans-serif;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:16px}
+  .build-head .bh-dot{width:8px;height:8px;border-radius:50%;background:var(--blue)}
+  .b-input{display:flex;align-items:center;gap:13px;margin-bottom:14px}
+  .b-thumbs{display:flex;gap:6px;flex:0 0 auto}
+  .b-thumb{width:34px;height:34px;border-radius:7px;background:#2a2a33 center/cover no-repeat;opacity:0;transform:translateY(6px);transition:.4s var(--ease)}
+  .b-thumb.in{opacity:1;transform:none}
+  .b-inmeta{min-width:0}
+  .b-inname{font-size:11px;color:rgba(255,255,255,.62);line-height:1.3;margin-bottom:6px}
+  .b-chips{display:flex;flex-wrap:wrap;gap:6px}
+  .b-chip{font-size:11px;color:rgba(255,255,255,.78);border:1px solid var(--line-d);border-radius:6px;padding:3px 8px;opacity:0;transform:translateY(6px);transition:.4s var(--ease)}
+  .b-chip.in{opacity:1;transform:none}
+  .b-divider{margin:2px 0 12px}
+  .b-divider .line{display:block;height:1px;background:var(--line-d);position:relative;overflow:hidden}
+  .b-divider .line::after{content:"";position:absolute;top:0;left:-40%;width:40%;height:100%;background:linear-gradient(90deg,transparent,var(--blue),transparent);animation:sweep 2.2s linear infinite}
+  @keyframes sweep{to{left:120%}}
+  .b-flip{position:relative;transform-style:preserve-3d;transition:transform .8s var(--ease)}
+  .b-flip.flipped{transform:rotateY(180deg)}
+  .b-face{backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--card);border-radius:12px;padding:16px 18px}
+  .b-front{position:relative}
+  .b-back{position:absolute;inset:0;height:100%;overflow:auto;transform:rotateY(180deg);display:flex}
+  .listing{display:flex;gap:11px}
+  .listing-main{flex:1;min-width:0}
+  .b-imgs{display:flex;flex-direction:column;gap:5px;flex:0 0 34px}
+  .b-imgs i{width:34px;height:34px;border-radius:5px;background:#f0f0f0 center/cover no-repeat;border:1px solid var(--line);opacity:0;transform:scale(.82);transition:.3s var(--ease)}
+  .b-imgs i.in{opacity:1;transform:none}
+  .b-title{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:12.5px;line-height:1.35;color:var(--ink);min-height:32px}
+  .b-title .cursor{display:inline-block;width:2px;height:12px;background:var(--blue);vertical-align:-2px;margin-left:1px;animation:blink 1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .b-bul{list-style:none;margin:9px 0 0;display:flex;flex-direction:column;gap:5px}
+  .b-bul li{padding-left:16px;position:relative;font-size:10.5px;color:var(--muted);line-height:1.4;opacity:0;transform:translateX(-6px);transition:.35s var(--ease)}
+  .b-bul li b{color:var(--ink);font-weight:600}
+  .b-bul li.in{opacity:1;transform:none}
+  .b-bul li::before{content:"";position:absolute;left:0;top:4px;width:8px;height:8px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 3px rgba(0,79,255,.15)}
+  .b-desc-front{margin-top:10px;opacity:0;transform:translateY(6px);transition:.4s var(--ease)}
+  .b-desc-front.in{opacity:1;transform:none}
+  .b-desc-front p{font-size:10px;color:var(--muted);line-height:1.45;margin-bottom:7px}
+  .skl{display:flex;flex-direction:column;gap:5px}
+  .skl span{height:6px;border-radius:3px;background:rgba(0,0,0,.09);display:block}
+  .svc{display:flex;flex-direction:column;gap:13px;height:100%;justify-content:center}
+  .svc-h{font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:16px;color:var(--ink);line-height:1.2}
+  .svc-row{display:flex;gap:10px;align-items:flex-start}
+  .svc-row .ck-box{margin-left:auto;align-self:center;border-color:var(--line)}
+  .svc-row.svcdone .ck-box{background:var(--blue);border-color:var(--blue)}
+  .svc-row.svcdone .ck-box::after{transform:rotate(45deg) scale(1)}
+  .svc-ic{width:26px;height:26px;border-radius:8px;background:rgba(0,79,255,.1);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex:0 0 auto}
+  .svc-row strong{display:block;font-size:12px;color:var(--ink);font-weight:600;margin-bottom:1px}
+  .svc-row span{font-size:11px;color:var(--muted);line-height:1.4}
+  .svc-badge{align-self:flex-start;font-family:'Space Grotesk',sans-serif;font-size:10.5px;font-weight:600;color:var(--blue);background:rgba(0,79,255,.08);border:1px solid rgba(0,79,255,.2);padding:5px 11px;border-radius:6px}
+  .b-desc{flex:1;display:flex;flex-direction:column;justify-content:space-between;font-size:12px;color:var(--ink);line-height:1.5}
+  .b-desc-lead{font-weight:600;margin-bottom:2px;color:var(--ink);font-size:13px;line-height:1.35}
+  .b-desc p{color:var(--muted)}
+  .b-desc-h{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:11px;letter-spacing:.04em;color:var(--blue)}
+  .b-desc ul{list-style:none;display:flex;flex-direction:column;gap:5px}
+  .b-desc li{padding-left:13px;position:relative;color:var(--muted)}
+  .b-desc li::before{content:"•";position:absolute;left:0;color:var(--blue)}
+  .b-desc .fine{font-size:10.5px;color:var(--muted);line-height:1.45}
+
+  /* sections */
+  section.block{padding:104px 0;border-top:1px solid var(--line)}
+  section.block.on-dark{background:var(--ink);color:#fff;border-top:1px solid var(--line-d)}
+  .head-h2{font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:clamp(30px,4.2vw,50px);max-width:20ch;margin-top:18px;line-height:1.08;letter-spacing:-.01em}
+  .head-h2 em{font-family:'Playfair Display',serif;font-style:italic;font-weight:500}
+  .on-dark .head-h2{color:#fff}
+  .head-sub{color:var(--muted);max-width:56ch;margin-top:20px;font-size:18px}
+  .on-dark .head-sub{color:rgba(255,255,255,.7)}
+  .hl{color:#5b86ff;font-weight:700;font-variant-numeric:tabular-nums}
+
+  /* before/after */
+  .ba{margin-top:52px;position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);
+    background:var(--card);user-select:none;box-shadow:0 30px 60px -40px rgba(0,0,0,.4)}
+  .ba-stage{position:relative;aspect-ratio:16/9;min-height:330px}
+  .ba-panel{position:absolute;inset:0;padding:40px 46px;display:flex;flex-direction:column;justify-content:center;gap:16px}
+  .ba-after{background:var(--card);clip-path:inset(0 calc(100% - var(--pos,50%)) 0 0)}
+  .ba-before{background:#f0eee8}
+  .mock-tag{font-family:'Space Grotesk',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+  .ba-before .mock-tag{color:#a7a299}
+  .ba-after .mock-tag{color:var(--blue)}
+  .mock-row{display:flex;gap:18px;align-items:center}
+  .mock-img{height:76px;width:76px;border-radius:12px;flex:0 0 auto}
+  .ba-before .mock-img{background:#d3cec4}
+  .ba-after .mock-img{background:linear-gradient(135deg,var(--blue),#7aa0ff)}
+  .mock-title{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:19px;line-height:1.25;letter-spacing:-.02em}
+  .ba-before .mock-title{color:#9a958c;font-weight:500}
+  .mock-bullets{font-size:14.5px;display:flex;flex-direction:column;gap:8px;list-style:none}
+  .ba-before .mock-bullets li{color:#a7a299}
+  .ba-after .mock-bullets li{padding-left:24px;position:relative;color:var(--ink)}
+  .ba-after .mock-bullets li::before{content:"";position:absolute;left:0;top:7px;width:13px;height:13px;border-radius:50%;
+    background:var(--blue);box-shadow:0 0 0 3px rgba(0,79,255,.15)}
+  .ba-divider{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:1.5px;background:var(--blue);z-index:5;transform:translateX(-1px)}
+  .ba-handle{position:absolute;top:50%;left:var(--pos,50%);transform:translate(-50%,-50%);z-index:6;width:48px;height:48px;
+    border-radius:50%;background:#fff;border:1.5px solid var(--blue);box-shadow:0 6px 20px rgba(0,0,0,.16);
+    display:flex;align-items:center;justify-content:center;color:var(--blue);font-size:15px;pointer-events:none}
+  .ba input[type=range]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0;z-index:7}
+  .ba-cap{display:flex;justify-content:space-between;padding:14px 20px;font-size:12.5px;color:var(--muted);
+    border-top:1px solid var(--line);background:var(--paper-2);font-family:'Space Grotesk',sans-serif;letter-spacing:.02em}
+
+  /* deliverables */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:52px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  @media(max-width:820px){.grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.grid{grid-template-columns:1fr}}
+  .cell{position:relative;overflow:hidden;background:var(--card);padding:34px 30px;cursor:pointer;
+    transition:background .3s var(--ease),box-shadow .3s var(--ease)}
+  .cell:focus-visible{outline:2px solid var(--blue);outline-offset:-2px}
+  .cell::after{content:"";position:absolute;top:0;left:0;width:100%;height:2px;background:var(--blue);
+    transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
+  .cell::before{content:"→";position:absolute;right:26px;bottom:22px;font-family:'Space Grotesk',sans-serif;
+    font-weight:600;color:var(--blue);opacity:0;transform:translateX(-8px);transition:.4s var(--ease)}
+  .cell:hover{background:#fff;box-shadow:inset 0 0 0 1px rgba(0,79,255,.16)}
+  .cell:hover::after{transform:scaleX(1)}
+  .cell:hover::before{opacity:1;transform:none}
+  .cell .n{font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600;color:var(--blue);letter-spacing:.05em}
+  .cell h3{font-size:20px;margin:18px 0 8px;letter-spacing:-.02em;transition:transform .3s var(--ease)}
+  .cell:hover h3{transform:translateX(4px)}
+  .cell p{font-size:14.5px;color:var(--muted)}
+  .bonusband{display:flex;flex-wrap:wrap;gap:9px 12px;align-items:center;margin-top:22px}
+  .bonusband .bb-label{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--blue)}
+  .bonusband span:not(.bb-label){border:1px solid var(--line);border-radius:999px;padding:6px 13px;background:var(--card);font-size:13.5px;color:var(--ink)}
+  .guarantee{display:flex;align-items:flex-start;gap:10px;margin-top:14px;font-size:14px;color:var(--muted)}
+  .guarantee .g-ic{flex:0 0 auto;width:22px;height:22px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
+  .guarantee strong{color:var(--ink)}
+
+  /* steps (dark) */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:54px}
+  @media(max-width:760px){.steps{grid-template-columns:1fr;gap:24px}}
+  .step{position:relative;padding-top:24px;border-top:1px solid var(--line-d);transition:transform .4s var(--ease)}
+  .step::before{content:"";position:absolute;top:-1px;left:0;width:100%;height:2px;background:var(--blue);
+    transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+  .step:hover{transform:translateY(-6px)}
+  .step:hover::before{transform:scaleX(1)}
+  .step .n{font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600;color:var(--blue);letter-spacing:.1em;transition:letter-spacing .35s var(--ease)}
+  .step:hover .n{letter-spacing:.24em}
+  .step h3{font-size:22px;margin:14px 0 10px;color:#fff;letter-spacing:-.02em}
+  .step p{font-size:15.5px;color:rgba(255,255,255,.66)}
+
+  /* why */
+  .why{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:start}
+  @media(max-width:820px){.why{grid-template-columns:1fr;gap:36px}}
+  .why ul{list-style:none;display:flex;flex-direction:column;gap:1px;background:var(--line);border-top:1px solid var(--line)}
+  .why li{position:relative;background:var(--paper);display:flex;gap:20px;padding:24px 4px;align-items:baseline;
+    transition:background .3s var(--ease),padding .3s var(--ease)}
+  .why li::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--blue);
+    transform:scaleY(0);transform-origin:top;transition:transform .4s var(--ease)}
+  .why li:hover{background:#fff;padding-left:20px}
+  .why li:hover::before{transform:scaleY(1)}
+  .why li .n{font-family:'Space Grotesk',sans-serif;color:var(--blue);font-size:15px;font-weight:600;flex:0 0 auto;transition:transform .3s var(--ease)}
+  .why li:hover .n{transform:translateX(2px)}
+  /* Why-Us upgrade: stats · expertise · proof · points */
+  .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:44px}
+  @media(max-width:700px){.stats-row{grid-template-columns:1fr 1fr}}
+  .stat{background:var(--card);padding:24px 18px;text-align:center}
+  .stat-n{display:block;font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:36px;color:var(--blue);line-height:1;letter-spacing:-.01em}
+  .stat-l{display:block;font-size:12.5px;color:var(--muted);margin-top:9px;line-height:1.35}
+  .mini-label{font-family:'Space Grotesk',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:44px 0 13px}
+  .exp-row{display:flex;flex-wrap:wrap;gap:9px}
+  .exp-row span{border:1px solid var(--line);border-radius:999px;padding:8px 15px;font-size:13.5px;background:var(--card);color:var(--ink)}
+  .proof-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+  @media(max-width:700px){.proof-grid{grid-template-columns:repeat(3,1fr)}}
+  .proof-grid img{width:100%;aspect-ratio:1200/1009;object-fit:cover;border-radius:10px;border:1px solid var(--line);display:block;background:#fff;cursor:zoom-in;transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+  .proof-grid img:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.14)}
+  .proof-cap{display:flex;align-items:baseline;gap:10px;margin:0 0 10px;font-size:12px}
+  .proof-brand{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--ink);text-transform:uppercase;letter-spacing:.06em}
+  .proof-cap span:last-child{color:var(--muted)}
+  .why-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border-top:1px solid var(--line);margin-top:44px}
+  @media(max-width:700px){.why-list{grid-template-columns:1fr}}
+  .why-list li{position:relative;background:var(--paper);display:flex;gap:16px;padding:22px 18px;align-items:baseline;transition:background .3s var(--ease),padding .3s var(--ease)}
+  .why-list li::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--blue);transform:scaleY(0);transform-origin:top;transition:transform .4s var(--ease)}
+  .why-list li:hover{background:#fff;padding-left:24px}
+  .why-list li:hover::before{transform:scaleY(1)}
+  .why-list .n{font-family:'Space Grotesk',sans-serif;color:var(--blue);font-weight:600;font-size:15px;flex:0 0 auto}
+  .why-list strong{display:block;font-size:16px;letter-spacing:-.01em;margin-bottom:4px}
+  .why-list .t{font-size:14px;color:var(--muted)}
+  .why li strong{display:block;font-size:17px;margin-bottom:5px;letter-spacing:-.01em}
+  .why li span.t{font-size:15px;color:var(--muted)}
+
+  /* request / slots section (dark) */
+  .req-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:64px;margin-top:54px;align-items:start}
+  @media(max-width:880px){.req-grid{grid-template-columns:1fr;gap:34px}}
+  .perk{list-style:none;display:flex;flex-direction:column;gap:16px;font-size:16px;color:rgba(255,255,255,.78)}
+  .perk li{display:flex;gap:13px;align-items:flex-start}
+  .perk li b{color:var(--blue);font-family:'Space Grotesk',sans-serif;flex:0 0 auto}
+  form{background:var(--card);color:var(--ink);border-radius:16px;padding:34px;box-shadow:0 40px 80px -50px rgba(0,0,0,.6)}
+  .field{margin-bottom:17px}
+  .field label{display:block;font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-bottom:8px;color:var(--muted)}
+  .field input,.field select{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:15px;background:#fff;color:var(--ink);transition:.2s}
+  .field input:focus,.field select:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,79,255,.13)}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:480px){.row2{grid-template-columns:1fr}}
+  .checks{display:flex;flex-wrap:wrap;gap:9px}
+  .chk{display:inline-flex;align-items:center;gap:11px;padding:10px 15px;border:1px solid var(--line);
+    border-radius:8px;font-size:14px;cursor:pointer;user-select:none;transition:.2s var(--ease);color:var(--ink)}
+  .chk input{accent-color:var(--blue);margin:0;width:15px;height:15px;flex:0 0 auto}
+  .chk:hover{border-color:var(--blue)}
+  .chk:has(input:checked){border-color:var(--blue);background:rgba(0,79,255,.07);color:var(--blue);font-weight:500}
+  #otherWrap{animation:fadeDown .3s var(--ease)}
+  @keyframes fadeDown{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+  .consent{display:flex;gap:11px;align-items:flex-start;font-size:12.5px;color:var(--muted);margin:8px 0 20px}
+  .consent input{margin-top:3px;flex:0 0 auto;accent-color:var(--blue)}
+  .consent a{color:var(--blue);text-decoration:underline}
+  form .btn{width:100%;justify-content:center;padding:15px;font-size:15.5px}
+  .form-note{font-size:11.5px;color:var(--muted);text-align:center;margin-top:13px;letter-spacing:.02em}
+  .success{display:none;text-align:center;padding:30px 12px;color:var(--ink)}
+  .success.show{display:block}
+  .success .check{width:58px;height:58px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:27px;margin:0 auto 18px}
+  .success h3{font-size:25px;margin-bottom:9px}
+  .success p{color:var(--muted);font-size:15px}
+  .hp{position:absolute;left:-9999px}
+  .form-slot-line{font-family:'Space Grotesk',sans-serif;font-size:13px;color:var(--blue);font-weight:600;margin-bottom:18px;display:flex;align-items:center;gap:9px}
+
+  /* footer */
+  footer{background:var(--ink);color:rgba(255,255,255,.6);padding:80px 0 36px;border-top:1px solid var(--line-d);font-size:14px}
+  .foot-contact{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;padding-bottom:46px;border-bottom:1px solid var(--line-d)}
+  @media(max-width:820px){.foot-contact{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.foot-contact{grid-template-columns:1fr}}
+  .foot-brand{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;color:#fff;letter-spacing:-.02em;display:flex;align-items:center;gap:9px;margin-bottom:14px}
+  .foot-brand .dot{width:8px;height:8px;border-radius:50%;background:var(--blue);margin-bottom:3px}
+  .foot-col h4{font-family:'Space Grotesk',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-d);margin-bottom:14px}
+  .foot-col p{line-height:1.7;color:rgba(255,255,255,.72)}
+  .foot-col a{color:rgba(255,255,255,.72)}
+  .foot-col a:hover{color:#fff}
+  .imprint{padding:46px 0;border-bottom:1px solid var(--line-d)}
+  .imprint .tag{color:var(--muted-d);margin-bottom:26px}
+  .imp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px 40px}
+  @media(max-width:820px){.imp-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.imp-grid{grid-template-columns:1fr}}
+  .imp-block h5{font-family:'Space Grotesk',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#fff;margin-bottom:9px}
+  .imp-block p{line-height:1.7;color:rgba(255,255,255,.62);font-size:13.5px}
+  .imp-block a{color:rgba(255,255,255,.62)}
+  .foot-bottom{padding-top:30px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted-d)}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(22px);transition:.8s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* modal */
+  .modal{position:fixed;inset:0;background:rgba(8,8,10,.66);display:none;z-index:100;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(3px)}
+  .modal.show{display:flex}
+  .lightbox{position:fixed;inset:0;background:rgba(8,8,10,.9);display:none;z-index:200;align-items:center;justify-content:center;padding:4vw;cursor:zoom-out;backdrop-filter:blur(4px)}
+  .lightbox.show{display:flex;animation:lbin .25s var(--ease)}
+  @keyframes lbin{from{opacity:0}to{opacity:1}}
+  .lightbox img{max-width:94vw;max-height:92vh;width:auto;height:auto;border-radius:12px;box-shadow:0 30px 90px rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.12)}
+  .lightbox .lb-close{position:absolute;top:20px;right:24px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.35);color:#fff;font-size:22px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center}
+  .modal-box{background:var(--card);max-width:660px;max-height:90vh;overflow:auto;border-radius:16px;padding:38px}
+  .modal-box h3{font-size:25px;margin-bottom:16px}
+  .modal-box h4{font-family:'Space Grotesk',sans-serif;font-weight:600;margin:18px 0 4px;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--blue)}
+  .modal-box p{font-size:14px;color:var(--muted);margin-bottom:8px}
+  .modal-close{float:right;background:none;border:0;font-size:26px;cursor:pointer;color:var(--muted);line-height:1}
+
+  /* example modal */
+  .ex-box{max-width:720px}
+  .ex-eyebrow{font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+  .ex-lead{color:var(--muted);font-size:14.5px;margin-bottom:14px;line-height:1.55}
+  .ex-listing{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:var(--paper)}
+  .ex-listing+.ex-listing{margin-top:10px}
+  .ex-ttl{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:16px;line-height:1.35;letter-spacing:-.01em;color:var(--ink)}
+  .ex-bul{list-style:none;display:flex;flex-direction:column;gap:11px;margin:2px 0}
+  .ex-bul li{padding-left:24px;position:relative;font-size:14.5px;color:var(--ink);line-height:1.5}
+  .ex-bul li::before{content:"";position:absolute;left:0;top:6px;width:12px;height:12px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 3px rgba(0,79,255,.15)}
+  .ex-imgs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:2px 0}
+  @media(max-width:560px){.ex-imgs{grid-template-columns:repeat(3,1fr)}}
+  .ex-ph{aspect-ratio:1;border-radius:10px;border:1px solid var(--line);background:linear-gradient(135deg,#eef2ff,#e1e8ff);
+    display:flex;align-items:flex-end;padding:9px;font-family:'Space Grotesk',sans-serif;font-size:10.5px;font-weight:600;color:var(--blue);line-height:1.2}
+  .ex-ph.main{background:linear-gradient(135deg,var(--blue),#7aa0ff);color:#fff}
+  .ex-photo{aspect-ratio:16/9;border-radius:12px;background:linear-gradient(135deg,#15151c,#24242f);display:flex;align-items:center;justify-content:center;
+    text-align:center;color:rgba(255,255,255,.55);font-size:13px;border:1px solid var(--line-d);padding:22px;font-family:'Space Grotesk',sans-serif;line-height:1.5}
+  .ex-sub{font-family:'Space Grotesk',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:16px 0 8px}
+  .ex-tags{display:flex;flex-wrap:wrap;gap:7px}
+  .ex-tags span{font-size:12.5px;background:rgba(0,79,255,.07);color:var(--blue);border:1px solid rgba(0,79,255,.22);padding:5px 11px;border-radius:6px;font-weight:500}
+  .ex-note{font-size:12px;color:var(--muted);margin-top:16px;padding-top:13px;border-top:1px solid var(--line);line-height:1.55}
+  .ex-cta{margin-top:24px}
+
+  /* pricing */
+  .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:52px}
+  @media(max-width:760px){.price-grid{grid-template-columns:1fr}}
+  .btn.small{padding:9px 16px;font-size:13px}
+  .trial-bar{margin-top:16px;border:1px solid var(--line);border-radius:10px;padding:13px 20px;display:flex;
+    justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;background:var(--paper-2);font-size:13.5px;color:var(--muted)}
+  .trial-bar strong{color:var(--ink)}
+  .tier{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 24px;
+    display:flex;flex-direction:column;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+  .tier:hover{transform:translateY(-5px);box-shadow:0 30px 60px -40px rgba(0,0,0,.4)}
+  .tier.feat{border-color:var(--blue);box-shadow:0 0 0 1px var(--blue)}
+  .tier .badge{position:absolute;top:-11px;left:24px;background:var(--blue);color:#fff;font-family:'Space Grotesk',sans-serif;
+    font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:4px 11px;border-radius:5px}
+  .tier .tname{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;letter-spacing:.02em}
+  .tier .tsub{font-size:13px;color:var(--muted);margin-top:3px;min-height:32px}
+  .tier .price{font-family:'Fraunces',serif;font-weight:500;font-size:40px;letter-spacing:-.02em;margin:12px 0 2px;line-height:1}
+  .tier .price small{font-size:13.5px;color:var(--muted);font-family:'Inter',sans-serif;font-weight:400}
+  .tier .total{font-size:12.5px;color:var(--muted);margin-bottom:16px;min-height:18px}
+  .tier ul{list-style:none;display:flex;flex-direction:column;gap:9px;margin:4px 0 22px;font-size:13.5px;color:var(--ink)}
+  .tier ul li{padding-left:21px;position:relative}
+  .tier ul li::before{content:"✓";position:absolute;left:0;color:var(--blue);font-weight:700}
+  .tier .btn{margin-top:auto;width:100%;justify-content:center}
+  .tier.ghosttier .btn{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+  .tier.ghosttier .btn:hover{background:var(--ink);color:#fff}
+  .sales-bar{margin-top:18px;border:1px dashed var(--line);border-radius:12px;padding:18px 24px;display:flex;
+    justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card)}
+  .sales-bar p{font-size:14.5px;color:var(--muted)}
+  .sales-bar strong{color:var(--ink)}
+</style>
+</head>
+<body>
+
+<header class="on-dark">
+  <nav class="wrap">
+    <a href="#top" class="brand">Riverland<span class="dot"></span></a>
+    <div class="nav-right">
+      <div class="navlinks">
+        <a href="#leistung" data-i18n="nav_service">Leistung</a>
+        <a href="#ablauf" data-i18n="nav_how">Ablauf</a>
+        <a href="#warum" data-i18n="nav_why">Warum wir</a>
+        <a href="#preise" data-i18n="nav_pricing">Preise</a>
+        <a href="#kontakt" data-i18n="nav_contact">Kontakt</a>
+      </div>
+      <div class="lang" role="group" aria-label="Language">
+        <button data-lang="de" class="on">DE</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <a href="#platz" class="btn" data-i18n="nav_cta">Platz anfragen</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero on-dark">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="reveal">
+          <span class="tag"><span class="num">01</span> <span data-i18n="hero_eyebrow">Riverland Studio</span></span>
+          <h1 data-i18n="hero_h1">Verwandle deine Produkte, in mehr <em>Umsatz</em>.</h1>
+          <p class="lead" data-i18n="hero_lead">Zwischen deinem Produkt und dem Verkauf steht oft nur eins: <strong>ein schwaches Listing</strong>. Wir schaffen dir Listings, die aus Besuchern Käufer machen — Text und Verkaufsbilder, natives Deutsch, in zwei Werktagen.</p>
+          <div class="hero-cta">
+            <a href="#platz" class="btn" data-i18n="hero_cta1">Platz anfragen</a>
+            <a href="#leistung" class="btn ghost" data-i18n="hero_cta2">So funktioniert's</a>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="build" id="buildAnim" aria-hidden="true">
+            <div class="build-head"><span class="bh-dot"></span><span data-i18n="anim_label">Aus Foto + Eckdaten wird ein Listing</span></div>
+            <div class="b-input">
+              <div class="b-thumbs">
+                <span class="b-thumb" style="background-image:url('assets/gkin1.jpg')"></span>
+                <span class="b-thumb" style="background-image:url('assets/gkin2.jpg')"></span>
+              </div>
+              <div class="b-inmeta">
+                <div class="b-inname">GravurenKing Damen Armband mit Gravur – Personalisiert</div>
+                <div class="b-chips"><span class="b-chip">Edelstahl</span><span class="b-chip">GravurenKing</span><span class="b-chip">Made in Germany</span></div>
+              </div>
+            </div>
+            <div class="b-divider"><span class="line"></span></div>
+            <ul class="checklist" id="buildCheck">
+              <li data-ck="title"><span class="ck-box"></span><span data-i18n="ck_title">Titel</span></li>
+              <li data-ck="bullets"><span class="ck-box"></span><span data-i18n="ck_bullets">Bullet Points</span></li>
+              <li data-ck="desc"><span class="ck-box"></span><span data-i18n="ck_desc">Beschreibung</span></li>
+              <li data-ck="images"><span class="ck-box"></span><span data-i18n="ck_images">Bilder</span></li>
+            </ul>
+            <div class="b-flip" id="bFlip">
+              <div class="b-face b-front">
+                <div class="listing">
+                  <div class="b-imgs">
+                    <i style="background-image:url('assets/gk1.jpg')"></i>
+                    <i style="background-image:url('assets/gk2.jpg')"></i>
+                    <i style="background-image:url('assets/gk3.jpg')"></i>
+                    <i style="background-image:url('assets/gk4.jpg')"></i>
+                    <i style="background-image:url('assets/gk5.jpg')"></i>
+                  </div>
+                  <div class="listing-main">
+                    <div class="b-title"><span class="b-tt"></span><span class="cursor"></span></div>
+                    <ul class="b-bul">
+                      <li><b>BESONDERS:</b> Edles Hochglanz-Finish aus Edelstahl – zeitlos glänzend, angenehm leicht und hautfreundlich am Handgelenk</li>
+                      <li><b>PRAKTISCH:</b> Maßgenau angepasst mit sicherem Karabinerverschluss – einfach anlegen, sofort tragen, kein Nachstellen nötig</li>
+                      <li><b>QUALITÄT:</b> Klassisches Damen-Armband aus Deutschland – präzise Lasergravur, made in Germany, höchste Verarbeitungsqualität</li>
+                      <li><b>HIGHLIGHT:</b> Gravurfläche 40×7 mm für Texte und Emojis – individuelle Fonts wählbar, kein Schmuck wie jeder andere: UNIKAT</li>
+                      <li><b>INHALT:</b> 1 Armband, personalisiert nach Wunsch</li>
+                    </ul>
+                    <div class="b-desc-front">
+                      <p>Ein Armband, so einzigartig wie die Person, die es trägt. Text und Emoji werden per präziser Lasergravur dauerhaft eingebracht – scharf, tief und wischfest …</p>
+                      <div class="skl"><span></span><span></span><span></span><span style="width:68%"></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-face b-back">
+                <div class="svc">
+                  <div class="svc-h" data-i18n="svc_h">Und danach: laufend optimiert.</div>
+                  <div class="svc-row"><span class="svc-ic">↑</span><div><strong data-i18n="svc1_t">SEO &amp; Keyword-Optimierung</strong><span data-i18n="svc1_p">Die richtigen Keywords — sichtbar im Text und im Backend.</span></div><span class="ck-box"></span></div>
+                  <div class="svc-row"><span class="svc-ic">⟳</span><div><strong data-i18n="svc2_t">Monatliche Pflege &amp; Updates</strong><span data-i18n="svc2_p">Wir prüfen dein Listing jeden Monat und aktualisieren Text, Keywords und Bilder, wenn nötig.</span></div><span class="ck-box"></span></div>
+                  <div class="svc-badge" data-i18n="svc_badge">Pflege-Abo · feste monatliche Pauschale</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slots reveal" id="slotsHero">
+        <div class="slots-top">
+          <span class="slots-live"><span class="pulse"></span><span data-i18n="slots_live">Begrenzte Kapazität · laufend aktualisiert</span></span>
+          <span class="slots-count" data-slot-count></span>
+        </div>
+        <div class="gauge" data-gauge></div>
+        <div class="slots-note" data-slot-note></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM + BEFORE/AFTER — hidden at launch, restore once a case study is ready -->
+  <section class="block" id="leistung-hidden" style="display:none" aria-hidden="true">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="tag"><span class="num">02</span> <span data-i18n="prob_kicker">Das Problem</span></span>
+        <h2 class="head-h2" data-i18n="prob_h2">Der Klick ist da. Bei schwachem Listing bleibt der <em>Kauf</em> aus.</h2>
+        <p class="head-sub" data-i18n="prob_sub">Gute Produkte verlieren täglich Umsatz an lieblose Listings — schwache Fotos, übersetzt klingender Text, keine Struktur. Zieh den Regler.</p>
+      </div>
+
+      <div class="ba reveal" id="ba" style="--pos:66%">
+        <div class="ba-stage">
+          <div class="ba-panel ba-before">
+            <div class="mock-tag" data-i18n="ba_before">Vorher</div>
+            <div class="mock-row">
+              <div class="mock-img"></div>
+              <div class="mock-title" data-i18n="ba_before_title">Trinkflasche Edelstahl 500ml</div>
+            </div>
+            <ul class="mock-bullets">
+              <li data-i18n="ba_before_b1">500 ml, Edelstahl</li>
+              <li data-i18n="ba_before_b2">verschiedene Farben</li>
+            </ul>
+          </div>
+          <div class="ba-panel ba-after">
+            <div class="mock-tag" data-i18n="ba_after">Nachher</div>
+            <div class="mock-row">
+              <div class="mock-img"></div>
+              <div class="mock-title" data-i18n="ba_after_title">KAUBOI Edelstahl-Trinkflasche 500 ml — auslaufsicher, BPA-frei, hält 24 h kalt</div>
+            </div>
+            <ul class="mock-bullets">
+              <li data-i18n="ba_after_b1">100 % auslaufsicher — kein Tropfen im Rucksack</li>
+              <li data-i18n="ba_after_b2">Hält 24 h kalt / 12 h warm dank Doppelwand</li>
+              <li data-i18n="ba_after_b3">BPA-frei & geschmacksneutral, spülmaschinenfest</li>
+            </ul>
+          </div>
+          <div class="ba-divider"></div>
+          <div class="ba-handle">⇄</div>
+          <input type="range" min="0" max="100" value="66" id="baRange" aria-label="Vorher/Nachher" />
+        </div>
+        <div class="ba-cap">
+          <span data-i18n="ba_cap_l">Verkaufsfertiges Listing</span>
+          <span data-i18n="ba_cap_r">Rohes Handyfoto + Stichworte</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DELIVERABLES -->
+  <section class="block" id="leistung">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="tag"><span class="num">02</span> <span data-i18n="del_kicker">Was du bekommst</span></span>
+        <h2 class="head-h2" data-i18n="del_h2">Ein komplettes Listing — aus einer <em>Hand</em>.</h2>
+      </div>
+      <div class="grid reveal">
+        <div class="cell" data-ex="title" tabindex="0" role="button"><div class="n">01</div><h3 data-i18n="del1_t">Keyword-Titel</h3><p data-i18n="del1_p">Optimierter Titel, der gefunden wird und zum Klick führt.</p></div>
+        <div class="cell" data-ex="bullets" tabindex="0" role="button"><div class="n">02</div><h3 data-i18n="del2_t">5 Bullet Points</h3><p data-i18n="del2_p">Nutzenorientiert — nicht nur Features, sondern Gründe zu kaufen.</p></div>
+        <div class="cell" data-ex="desc" tabindex="0" role="button"><div class="n">03</div><h3 data-i18n="del3_t">Beschreibung</h3><p data-i18n="del3_p">Ausführlich, scanbar, überzeugend — sauberes, natives Deutsch.</p></div>
+        <div class="cell" data-ex="images" tabindex="0" role="button"><div class="n">04</div><h3 data-i18n="del4_t">Premium-Bildwelt</h3><p data-i18n="del4_p">Sieben hochwertige Produktbilder — Infografiken, die informieren, Vertrauen schaffen und Kaufeinwände auflösen.</p></div>
+        <div class="cell" data-ex="keywords" tabindex="0" role="button"><div class="n">05</div><h3 data-i18n="del5_t">Keyword-Recherche</h3><p data-i18n="del5_p">Pro Produkt recherchiert — plus Backend-Suchbegriffe für Sichtbarkeit.</p></div>
+        <div class="cell" data-ex="qa" tabindex="0" role="button"><div class="n">06</div><h3 data-i18n="del6_t">Deutsche QA</h3><p data-i18n="del6_p">Jedes Listing wird vor Auslieferung von einem deutschen Profi geprüft.</p></div>
+      </div>
+      <div class="bonusband reveal">
+        <span class="bb-label" data-i18n="bon_h">Obendrauf inklusive</span>
+        <span data-i18n="bon1">Wettbewerbs-Teardown</span>
+        <span data-i18n="bon2">Compliance-Check (GPSR)</span>
+        <span data-i18n="bon3">Bildquellen-Dateien</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW (dark) -->
+  <section class="block on-dark" id="ablauf">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="tag"><span class="num">03</span> <span data-i18n="how_kicker">Der Ablauf</span></span>
+        <h2 class="head-h2" data-i18n="how_h2">Drei Schritte. Dein Aufwand: zwei <em>Minuten</em>.</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="n">01</div><h3 data-i18n="how1_t">Du schickst uns das Produkt</h3><p data-i18n="how1_p">2–3 Fotos (Handy reicht) und ein paar Eckdaten — Name, Maße, Highlights.</p></div>
+        <div class="step reveal"><div class="n">02</div><h3 data-i18n="how2_t">Wir erstellen das Listing</h3><p data-i18n="how2_p">Recherche, Text und Bilder — geprüft von einem deutschen E-Commerce-Profi.</p></div>
+        <div class="step reveal"><div class="n">03</div><h3 data-i18n="how3_t">In 2 Werktagen fertig</h3><p data-i18n="how3_p">Verkaufsfertiges Listing, copy-paste-bereit für Amazon oder Shopify.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="block" id="warum">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="tag"><span class="num">04</span> <span data-i18n="why_kicker">Warum Riverland</span></span>
+        <h2 class="head-h2" data-i18n="why_h2">Maßgeschneidert — nicht von der <em>Stange</em>.</h2>
+        <p class="head-sub" data-i18n="why_sub">Jedes Listing entsteht individuell für dein Produkt und deine Marke. Mit über 7 Jahren Erfahrung im Erstellen von Produktlistings für Amazon.de wissen wir, wie ein Listing lesen muss, damit in Deutschland gekauft wird.</p>
+      </div>
+
+      <div class="stats-row reveal">
+        <div class="stat"><span class="stat-n">7+</span><span class="stat-l" data-i18n="stat1">Jahre Erfahrung mit Amazon.de</span></div>
+        <div class="stat"><span class="stat-n">100%</span><span class="stat-l" data-i18n="stat2">deutsche Endkontrolle</span></div>
+        <div class="stat"><span class="stat-n">2</span><span class="stat-l" data-i18n="stat3">Werktage pro Listing</span></div>
+        <div class="stat"><span class="stat-n">4</span><span class="stat-l" data-i18n="stat4">Kanäle: Amazon · Shopify · TikTok · OTTO</span></div>
+      </div>
+
+      <div class="reveal">
+        <p class="mini-label" data-i18n="exp_label">Unsere Kompetenzfelder</p>
+        <div class="exp-row">
+          <span data-i18n="exp1">Native-Deutsch-Copywriting</span>
+          <span data-i18n="exp2">Keyword- & SEO-Recherche</span>
+          <span data-i18n="exp3">A+ Content / EBC</span>
+          <span data-i18n="exp4">Infografiken & Bildwelt</span>
+          <span data-i18n="exp5">Produktfotos aufbereiten</span>
+          <span data-i18n="exp6">Multi-Channel (Amazon · Shopify · TikTok)</span>
+          <span data-i18n="exp7">GPSR-Compliance</span>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <p class="mini-label" data-i18n="proof_label">Ein Auszug aus unserer Produktion</p>
+        <div class="proof-cap"><span class="proof-brand">GravurenKing</span><span data-i18n="proof_c1">Personalisierter Edelstahlschmuck</span></div>
+        <div class="proof-grid">
+          <img src="assets/gk1.jpg" alt="Von uns erstellte Infografik — Produktvorteile Armband" loading="lazy">
+          <img src="assets/gk2.jpg" alt="Von uns erstelltes Lifestyle-Bild — Armband am Handgelenk" loading="lazy">
+          <img src="assets/gk3.jpg" alt="Von uns erstellte Infografik — Gravur & Material" loading="lazy">
+          <img src="assets/gk4.jpg" alt="Von uns erstellte Lifestyle-Bildwelt — Armband im Alltag" loading="lazy">
+          <img src="assets/gk5.jpg" alt="Von uns erstelltes Produktbild — personalisiertes Armband" loading="lazy">
+        </div>
+        <div class="proof-cap" style="margin-top:22px"><span class="proof-brand">OG ASIA</span><span data-i18n="proof_c2">Koreanische Snacks &amp; Food</span></div>
+        <div class="proof-grid">
+          <img src="assets/out6.jpg" alt="Von uns erstelltes Produktbild — koreanische Chips" loading="lazy">
+          <img src="assets/out3.jpg" alt="Von uns erstelltes Lifestyle-Bild — Chips" loading="lazy">
+          <img src="assets/out1.jpg" alt="Von uns erstellte Infografik — Chips" loading="lazy">
+          <img src="assets/out5.jpg" alt="Von uns erstellte Infografik — Chips" loading="lazy">
+          <img src="assets/out4.jpg" alt="Von uns erstellte Nährwert-Infografik — Chips" loading="lazy">
+        </div>
+      </div>
+
+      <ul class="why-list reveal">
+        <li><span class="n">01</span><span><strong data-i18n="why1_t">Natives Deutsch, kein Übersetzungs-Sound</strong><span class="t" data-i18n="why1_p">Deutsche Käufer merken Maschinenübersetzung in zwei Sekunden — und springen ab.</span></span></li>
+        <li><span class="n">02</span><span><strong data-i18n="why2_t">Maßgeschneidert für dein Produkt</strong><span class="t" data-i18n="why2_p">Kein Template von der Stange — jedes Listing wird einzeln für dich recherchiert und geschrieben.</span></span></li>
+        <li><span class="n">03</span><span><strong data-i18n="why3_t">Text und Bild aus einer Hand</strong><span class="t" data-i18n="why3_p">Kein Jonglieren zwischen Texter und Grafiker — ein Ansprechpartner, ein Ergebnis.</span></span></li>
+        <li><span class="n">04</span><span><strong data-i18n="why4_t">Serielle Produktion — viele Listings, gleiche Qualität</strong><span class="t" data-i18n="why4_p">Ein eingespieltes System liefert dein ganzes Sortiment schnell und konsistent — ohne Qualitätsverlust bei Menge.</span></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PRICING (06) -->
+  <section class="block" id="preise">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="tag"><span class="num">05</span> <span data-i18n="pr_kicker">Preise & Buchung</span></span>
+        <h2 class="head-h2" data-i18n="pr_h2">Direkt buchen — oder erst <em>testen</em>.</h2>
+        <p class="head-sub" data-i18n="pr_sub">Transparente Staffelpreise pro Listing: je mehr Listings, desto günstiger. Noch unsicher? Starte mit einem einzelnen Trial-Listing.</p>
+      </div>
+      <div class="price-grid reveal">
+        <div class="tier">
+          <div class="tname" data-i18n="t_s_n">Starter</div>
+          <div class="tsub" data-i18n="t_s_s">5 Listings</div>
+          <div class="price">€229 <small data-i18n="per">/ Listing</small></div>
+          <div class="total"><span data-i18n="total_s">gesamt</span> €1.145</div>
+          <ul>
+            <li data-i18n="li_copy">Titel, Bullets & Beschreibung</li>
+            <li data-i18n="li_imgs">Sieben Premium-Bilder</li>
+            <li data-i18n="li_research">Keyword-Recherche + deutsche QA</li>
+          </ul>
+          <button type="button" class="btn" data-book="Starter (5 Listings)" data-i18n="book">Buchen</button>
+        </div>
+        <div class="tier feat">
+          <div class="badge" data-i18n="badge_popular">Beliebt</div>
+          <div class="tname" data-i18n="t_g_n">Growth</div>
+          <div class="tsub" data-i18n="t_g_s">10 Listings</div>
+          <div class="price">€199 <small data-i18n="per">/ Listing</small></div>
+          <div class="total"><span data-i18n="total_s">gesamt</span> €1.990</div>
+          <ul>
+            <li data-i18n="li_copy">Titel, Bullets & Beschreibung</li>
+            <li data-i18n="li_imgs">Sieben Premium-Bilder</li>
+            <li data-i18n="li_research">Keyword-Recherche + deutsche QA</li>
+          </ul>
+          <button type="button" class="btn" data-book="Growth (10 Listings)" data-i18n="book">Buchen</button>
+        </div>
+        <div class="tier">
+          <div class="tname" data-i18n="t_sc_n">Scale</div>
+          <div class="tsub" data-i18n="t_sc_s">20 Listings</div>
+          <div class="price">€179 <small data-i18n="per">/ Listing</small></div>
+          <div class="total"><span data-i18n="total_s">gesamt</span> €3.580</div>
+          <ul>
+            <li data-i18n="li_copy">Titel, Bullets & Beschreibung</li>
+            <li data-i18n="li_imgs">Sieben Premium-Bilder</li>
+            <li data-i18n="li_research">Keyword-Recherche + deutsche QA</li>
+          </ul>
+          <button type="button" class="btn" data-book="Scale (20 Listings)" data-i18n="book">Buchen</button>
+        </div>
+      </div>
+      <div class="trial-bar reveal">
+        <span><strong data-i18n="trial_bar_q">Lieber erst testen?</strong> <span data-i18n="trial_bar_p">1 Trial-Listing für €99 — wird bei deiner ersten Bestellung angerechnet.</span></span>
+        <button type="button" class="btn small" data-book="Trial (1 Listing)" data-i18n="book_trial">Trial buchen</button>
+      </div>
+      <div class="guarantee reveal">
+        <span class="g-ic">✓</span>
+        <span data-i18n="gar_txt"><strong>Risikofrei:</strong> Gefällt dir das Muster nicht, zahlst du nichts. Dazu: Muttersprache-Garantie und Überarbeitung bis zur Freigabe.</span>
+      </div>
+      <div class="sales-bar reveal">
+        <p><strong data-i18n="sales_q">Mehr als 20 Listings?</strong> <span data-i18n="sales_p">Für 50, 100 oder laufende Volumina machen wir dir ein individuelles Angebot.</span></p>
+        <a href="mailto:office@riverland-int.com?subject=Anfrage%20Volumen%20(50%2B%20Listings)" class="btn ghost" data-i18n="sales_btn">Sales kontaktieren</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUEST A SLOT (dark) -->
+  <section class="block on-dark" id="platz">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="tag"><span class="num">06</span> <span data-i18n="req_kicker">Freie Plätze</span></span>
+        <h2 class="head-h2" data-i18n="req_h2">Sichere dir einen der wenigen <em>Plätze</em>.</h2>
+        <p class="head-sub" data-i18n="req_sub">Wir nehmen pro Monat nur <span class="hl" data-slot-free></span> neue Kunden an — weil jedes Listing durch unsere deutsche Endkontrolle läuft. So bekommt jedes Listing die Qualität, die es verdient. Vergeben wird in der Reihenfolge der Anfragen.</p>
+      </div>
+      <div class="req-grid">
+        <div class="reveal">
+          <div class="slots" style="max-width:none;margin-top:0;margin-bottom:30px">
+            <div class="slots-top">
+              <span class="slots-live"><span class="pulse"></span><span data-i18n="slots_live">Begrenzte Kapazität · laufend aktualisiert</span></span>
+              <span class="slots-count" data-slot-count></span>
+            </div>
+            <div class="gauge" data-gauge></div>
+          </div>
+          <ul class="perk">
+            <li><b>→</b><span data-i18n="req_perk1">Direkter Onboarding-Platz — einer der 8 Plätze pro Monat</span></li>
+            <li><b>→</b><span data-i18n="req_perk2">Einmaliges Muster-Listing für dein schwächstes Produkt</span></li>
+            <li><b>→</b><span data-i18n="req_perk4">Persönliche Betreuung — keine Massenabfertigung</span></li>
+          </ul>
+        </div>
+
+        <div class="reveal">
+          <form id="waitForm" action="https://formspree.io/f/xpqgnwob" method="POST">
+            <div class="form-slot-line"><span class="pulse"></span><span data-slot-form></span></div>
+            <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" />
+            <input type="hidden" name="_subject" value="Neue Platz-Anfrage — Riverland Studio" />
+            <div class="field">
+              <label data-i18n="f_company">Firmenname</label>
+              <input type="text" name="firma" required data-i18n-ph="f_company_ph" placeholder="Name deiner Firma" />
+            </div>
+            <div class="field">
+              <label data-i18n="f_email">E-Mail</label>
+              <input type="email" name="email" required data-i18n-ph="f_email_ph" placeholder="du@beispiel.de" />
+            </div>
+            <div class="field">
+              <label data-i18n="f_paket">Gewünschtes Paket</label>
+              <select name="paket" id="paketSel">
+                <option value="Noch unentschlossen" data-i18n="f_paket_o0">Noch unentschlossen</option>
+                <option value="Trial (1 Listing)" data-i18n="f_paket_o1">Trial – 1 Listing (€99)</option>
+                <option value="Starter (5 Listings)" data-i18n="f_paket_o2">Starter – 5 Listings</option>
+                <option value="Growth (10 Listings)" data-i18n="f_paket_o3">Growth – 10 Listings</option>
+                <option value="Scale (20 Listings)" data-i18n="f_paket_o4">Scale – 20 Listings</option>
+                <option value="50+ (individuell)" data-i18n="f_paket_o5">50+ (individuell)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label data-i18n="f_market">Wo verkaufst du? (Mehrfachauswahl)</label>
+              <div class="checks">
+                <label class="chk"><input type="checkbox" name="marktplatz" value="Amazon.de" /><span data-i18n="f_market_o1">Amazon.de</span></label>
+                <label class="chk"><input type="checkbox" name="marktplatz" value="TikTok Shop" /><span data-i18n="f_market_tt">TikTok Shop</span></label>
+                <label class="chk"><input type="checkbox" name="marktplatz" value="Shopify / eigener Shop" /><span data-i18n="f_market_o2">Shopify / eigener Shop</span></label>
+                <label class="chk"><input type="checkbox" name="marktplatz" value="Andere Plattform" id="chkOther" /><span data-i18n="f_market_o3">Andere Plattform</span></label>
+                <label class="chk"><input type="checkbox" name="marktplatz" value="Noch keiner" /><span data-i18n="f_market_o4">Noch keiner</span></label>
+              </div>
+            </div>
+            <div class="field" id="otherWrap" style="display:none">
+              <label data-i18n="f_other">Welche Plattform(en)?</label>
+              <input type="text" name="andere_plattformen" data-i18n-ph="f_other_ph" placeholder="z. B. eBay, Kaufland, Etsy …" />
+            </div>
+            <div class="field">
+              <label data-i18n="f_count">Wie viele Listings?</label>
+              <select name="anzahl_listings">
+                <option data-i18n="f_count_o1">1–5</option>
+                <option data-i18n="f_count_o2">6–20</option>
+                <option data-i18n="f_count_o3">21–50</option>
+                <option data-i18n="f_count_o4">50+</option>
+              </select>
+            </div>
+            <label class="consent">
+              <input type="checkbox" required />
+              <span data-i18n="f_consent">Ich bin einverstanden, dass Riverland mich zu meiner Anfrage kontaktiert. Mehr in der <a href="datenschutz.html" target="_blank" id="privacyLink">Datenschutzerklärung</a>.</span>
+            </label>
+            <button type="submit" class="btn" data-i18n="f_submit">Platz anfragen</button>
+            <div class="form-note" data-i18n="f_note">Wir geben deine Daten nicht weiter. Abmeldung jederzeit möglich.</div>
+          </form>
+          <div class="success" id="successBox">
+            <div class="check">✓</div>
+            <h3 data-i18n="ok_h">Anfrage erhalten.</h3>
+            <p data-i18n="ok_p">Danke. Wir melden uns in Kürze persönlich bei dir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="foot-contact">
+      <div>
+        <div class="foot-brand">Riverland<span class="dot"></span></div>
+        <p style="color:rgba(255,255,255,.6);max-width:32ch" data-i18n="foot_tag">Verkaufsstarke Listings in nativem Deutsch — Text und Premium-Bildwelt.</p>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_hq">Hauptsitz</h4>
+        <p>Hangstraße 11<br/>21075 Hamburg<br/>Deutschland<br/><br/>
+        <a href="tel:+4915751110598">+49 1575 111 0598</a><br/>
+        <a href="mailto:office@riverland-int.com">office@riverland-int.com</a></p>
+      </div>
+    </div>
+
+    <div class="imprint">
+      <span class="tag"><span class="num">—</span> <span data-i18n="imp_kicker">Impressum</span></span>
+      <div class="imp-grid">
+        <div class="imp-block"><h5 data-i18n="imp_provider">Anbieter</h5><p>Riverland International GmbH<br/>Hangstraße 11<br/>21075 Hamburg</p></div>
+        <div class="imp-block"><h5 data-i18n="imp_register">Handelsregister</h5><p>HRB 187138 (Fall 1)<br/>Registergericht: Amtsgericht Hamburg</p></div>
+        <div class="imp-block"><h5 data-i18n="imp_repr">Vertreten durch</h5><p>Hr. Pascal Weihrauch<br/>Fr. Tham Nguyen</p></div>
+        <div class="imp-block"><h5 data-i18n="imp_contact">Kontakt</h5><p>Telefon: <a href="tel:+4915751110598">+49 (0)1575 111 0598</a><br/>E-Mail: <a href="mailto:office@riverland-int.com">office@riverland-int.com</a></p></div>
+        <div class="imp-block"><h5 data-i18n="imp_vat">Umsatzsteuer-ID</h5><p><span data-i18n="imp_vat_p">USt-IdNr. gemäß § 27 a UStG:</span><br/>DE369591654</p></div>
+        <div class="imp-block"><h5 data-i18n="imp_adr">Verbraucherstreitbeilegung</h5><p data-i18n="imp_adr_p">Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p></div>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> Riverland International GmbH. <span data-i18n="foot_rights">Alle Rechte vorbehalten.</span></span>
+      <span><a href="impressum.html" style="text-decoration:underline" data-i18n="foot_imprint">Impressum</a> · <a href="datenschutz.html" style="text-decoration:underline" data-i18n="foot_privacy">Datenschutz</a> · Hamburg · Deutschland</span>
+    </div>
+  </div>
+</footer>
+
+<!-- privacy modal -->
+<div class="lightbox" id="lightbox"><button class="lb-close" id="lbClose" aria-label="Schließen">×</button><img id="lbImg" src="" alt=""></div>
+
+<div class="modal" id="privacyModal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">×</button>
+    <h3 data-i18n="pp_h">Datenschutz — Platz-Anfrage</h3>
+    <p data-i18n="pp_intro">Hier siehst du, was mit den Daten passiert, die du über das Anfrage-Formular sendest.</p>
+    <h4 data-i18n="pp_1t">Verantwortlich</h4>
+    <p>Riverland International GmbH, Hangstraße 11, 21075 Hamburg · office@riverland-int.com</p>
+    <h4 data-i18n="pp_2t">Welche Daten</h4>
+    <p data-i18n="pp_2p">Name, E-Mail-Adresse und deine Angaben zu Marktplatz und Listing-Anzahl.</p>
+    <h4 data-i18n="pp_3t">Zweck & Rechtsgrundlage</h4>
+    <p data-i18n="pp_3p">Wir nutzen die Daten ausschließlich, um deine Anfrage zu bearbeiten (Einwilligung, Art. 6 Abs. 1 lit. a DSGVO). Die Übermittlung erfolgt über unseren Formular-Dienstleister.</p>
+    <h4 data-i18n="pp_4t">Deine Rechte</h4>
+    <p data-i18n="pp_4p">Du kannst deine Einwilligung jederzeit per E-Mail widerrufen und Auskunft, Berichtigung oder Löschung verlangen.</p>
+    <p style="font-size:12px;color:var(--muted);margin-top:14px" data-i18n="pp_note">Hinweis: Diese Kurzfassung ersetzt keine vollständige Datenschutzerklärung. Vor dem Live-Gang von einem Profi prüfen lassen.</p>
+  </div>
+</div>
+
+<!-- example modal (deliverable tiles) -->
+<div class="modal" id="exModal">
+  <div class="modal-box ex-box">
+    <button class="modal-close" id="exClose">×</button>
+    <div class="ex-eyebrow" id="exTag"></div>
+    <h3 id="exTitle" style="font-size:24px;margin-bottom:16px"></h3>
+    <div id="exBody"></div>
+    <div class="ex-cta"><a href="#platz" class="btn" id="exCtaBtn">Platz anfragen</a></div>
+  </div>
+</div>
+
+<script>
+/* ===== SLOT CONFIG — hier anpassen, wenn Plätze vergeben sind ===== */
+const SLOTS_TOTAL = 8;   // max. neue Kunden pro Monat (Kapazität deutsche Endkontrolle)
+const SLOTS_TAKEN = 0;   // bereits vergeben → erhöhen, wenn Plätze weg sind
+const SLOTS_FREE  = Math.max(0, SLOTS_TOTAL - SLOTS_TAKEN);
+
+const I18N = {
+  de:{
+    nav_service:"Leistung",nav_how:"Ablauf",nav_why:"Warum wir",nav_pricing:"Preise",nav_contact:"Kontakt",nav_cta:"Platz anfragen",
+    pr_kicker:"Preise & Buchung",pr_h2:"Direkt buchen — oder erst <em>testen</em>.",
+    pr_sub:"Transparente Staffelpreise pro Listing: je mehr Listings, desto günstiger. Noch unsicher? Starte mit einem einzelnen Trial-Listing.",
+    badge_popular:"Beliebt",per:"/ Listing",total_s:"gesamt",book:"Buchen",book_trial:"Trial buchen",
+    trial_bar_q:"Lieber erst testen?",trial_bar_p:"1 Trial-Listing für €99 — wird bei deiner ersten Bestellung angerechnet.",
+    bon_h:"Obendrauf inklusive",bon1:"Wettbewerbs-Teardown",bon2:"Compliance-Check (GPSR)",bon3:"Bildquellen-Dateien",
+    gar_txt:"<strong>Risikofrei:</strong> Gefällt dir das Muster nicht, zahlst du nichts. Dazu: Muttersprache-Garantie und Überarbeitung bis zur Freigabe.",
+    t_s_n:"Starter",t_s_s:"5 Listings",t_g_n:"Growth",t_g_s:"10 Listings",t_sc_n:"Scale",t_sc_s:"20 Listings",
+    li_copy:"Titel, Bullets & Beschreibung",li_imgs:"Sieben Premium-Bilder",li_research:"Keyword-Recherche + deutsche QA",
+    sales_q:"Mehr als 20 Listings?",sales_p:"Für 50, 100 oder laufende Volumina machen wir dir ein individuelles Angebot.",sales_btn:"Sales kontaktieren",
+    f_paket:"Gewünschtes Paket",f_paket_o0:"Noch unentschlossen",f_paket_o1:"Trial – 1 Listing (€99)",f_paket_o2:"Starter – 5 Listings",f_paket_o3:"Growth – 10 Listings",f_paket_o4:"Scale – 20 Listings",f_paket_o5:"50+ (individuell)",
+    hero_eyebrow:"Riverland Studio",anim_label:"Aus Foto + Eckdaten wird ein Listing",
+    ck_title:"Titel",ck_bullets:"Bullet Points",ck_images:"Bilder",ck_desc:"Beschreibung",
+    svc_h:"Und danach: laufend optimiert.",svc1_t:"SEO & Keyword-Optimierung",svc1_p:"Die richtigen Keywords — sichtbar im Text und im Backend.",svc2_t:"Monatliche Pflege & Updates",svc2_p:"Wir prüfen dein Listing jeden Monat und aktualisieren Text, Keywords und Bilder, wenn nötig.",svc_badge:"Pflege-Abo · feste monatliche Pauschale",
+    hero_h1:"Verwandle deine Produkte, in mehr <em>Umsatz</em>.",
+    hero_lead:'Zwischen deinem Produkt und dem Verkauf steht oft nur eins: <strong>ein schwaches Listing</strong>. Wir schaffen dir Listings, die aus Besuchern Käufer machen — Text und Verkaufsbilder, natives Deutsch, in zwei Werktagen.',
+    hero_cta1:"Platz anfragen",hero_cta2:"So funktioniert's",
+    slots_live:"Begrenzte Kapazität · laufend aktualisiert",
+    slots_note:"Wir nehmen pro Monat nur eine begrenzte Zahl neuer Kunden an — weil jedes Listing durch unsere deutsche Endkontrolle läuft.",
+    prob_kicker:"Das Problem",
+    prob_h2:"Der Klick ist da. Bei schwachem Listing bleibt der <em>Kauf</em> aus.",
+    prob_sub:"Gute Produkte verlieren täglich Umsatz an lieblose Listings — schwache Fotos, übersetzt klingender Text, keine Struktur. Zieh den Regler.",
+    ba_before:"Vorher",ba_after:"Nachher",
+    ba_before_title:"Trinkflasche Edelstahl 500ml",
+    ba_before_b1:"500 ml, Edelstahl",ba_before_b2:"verschiedene Farben",
+    ba_after_title:"KAUBOI Edelstahl-Trinkflasche 500 ml — auslaufsicher, BPA-frei, hält 24 h kalt",
+    ba_after_b1:"100 % auslaufsicher — kein Tropfen im Rucksack",
+    ba_after_b2:"Hält 24 h kalt / 12 h warm dank Doppelwand",
+    ba_after_b3:"BPA-frei & geschmacksneutral, spülmaschinenfest",
+    ba_cap_l:"Verkaufsfertiges Listing",ba_cap_r:"Rohes Handyfoto + Stichworte",
+    del_kicker:"Was du bekommst",del_h2:"Ein komplettes Listing — aus einer <em>Hand</em>.",
+    del1_t:"Keyword-Titel",del1_p:"Optimierter Titel, der gefunden wird und zum Klick führt.",
+    del2_t:"5 Bullet Points",del2_p:"Nutzenorientiert — nicht nur Features, sondern Gründe zu kaufen.",
+    del3_t:"Beschreibung",del3_p:"Ausführlich, scanbar, überzeugend — sauberes, natives Deutsch.",
+    del4_t:"Premium-Bildwelt",del4_p:"Sieben hochwertige Produktbilder — Infografiken, die informieren, Vertrauen schaffen und Kaufeinwände auflösen.",
+    del5_t:"Keyword-Recherche",del5_p:"Pro Produkt recherchiert — plus Backend-Suchbegriffe für Sichtbarkeit.",
+    del6_t:"Deutsche QA",del6_p:"Jedes Listing wird vor Auslieferung von einem deutschen Profi geprüft.",
+    how_kicker:"Der Ablauf",how_h2:"Drei Schritte. Dein Aufwand: zwei <em>Minuten</em>.",
+    how1_t:"Du schickst uns das Produkt",how1_p:"2–3 Fotos (Handy reicht) und ein paar Eckdaten — Name, Maße, Highlights.",
+    how2_t:"Wir erstellen das Listing",how2_p:"Recherche, Text und Bilder — geprüft von einem deutschen E-Commerce-Profi.",
+    how3_t:"In 2 Werktagen fertig",how3_p:"Verkaufsfertiges Listing, copy-paste-bereit für Amazon oder Shopify.",
+    why_kicker:"Warum Riverland",why_h2:"Maßgeschneidert — nicht von der <em>Stange</em>.",
+    why_sub:"Jedes Listing entsteht individuell für dein Produkt und deine Marke. Mit über 7 Jahren Erfahrung im Erstellen von Produktlistings für Amazon.de wissen wir, wie ein Listing lesen muss, damit in Deutschland gekauft wird.",
+    why1_t:"Natives Deutsch, kein Übersetzungs-Sound",why1_p:"Deutsche Käufer merken Maschinenübersetzung in zwei Sekunden — und springen ab.",
+    why2_t:"Maßgeschneidert für dein Produkt",why2_p:"Kein Template von der Stange — jedes Listing wird einzeln für dich recherchiert und geschrieben.",
+    why3_t:"Text und Bild aus einer Hand",why3_p:"Kein Jonglieren zwischen Texter und Grafiker — ein Ansprechpartner, ein Ergebnis.",
+    why4_t:"Serielle Produktion — viele Listings, gleiche Qualität",why4_p:"Ein eingespieltes System liefert dein ganzes Sortiment schnell und konsistent — ohne Qualitätsverlust bei Menge.",
+    stat1:"Jahre Erfahrung mit Amazon.de",stat2:"deutsche Endkontrolle",stat3:"Werktage pro Listing",stat4:"Kanäle: Amazon · Shopify · TikTok · OTTO",
+    exp_label:"Unsere Kompetenzfelder",exp1:"Native-Deutsch-Copywriting",exp2:"Keyword- & SEO-Recherche",exp3:"A+ Content / EBC",exp4:"Infografiken & Bildwelt",exp5:"Produktfotos aufbereiten",exp6:"Multi-Channel (Amazon · Shopify · TikTok)",exp7:"GPSR-Compliance",
+    proof_label:"Ein Auszug aus unserer Produktion",
+    proof_c1:"Personalisierter Edelstahlschmuck",
+    proof_c2:"Koreanische Snacks & Food",
+    req_kicker:"Freie Plätze",req_h2:"Sichere dir einen Platz als <em>neuer Kunde</em>.",
+    req_sub:'Wir nehmen pro Monat nur <span class="hl" data-slot-free></span> neue Kunden an — weil jedes Listing durch unsere deutsche Endkontrolle läuft. So bekommt jedes Listing die Qualität, die es verdient. Vergeben wird in der Reihenfolge der Anfragen.',
+    req_perk1:"Direkter Onboarding-Platz — einer der 8 Plätze pro Monat",
+    req_perk2:"Einmaliges Muster-Listing für dein schwächstes Produkt",
+    req_perk4:"Persönliche Betreuung — keine Massenabfertigung",
+    f_company:"Firmenname",f_company_ph:"Name deiner Firma",f_email:"E-Mail",f_email_ph:"du@beispiel.de",
+    f_market:"Wo verkaufst du? (Mehrfachauswahl)",f_market_o1:"Amazon.de",f_market_tt:"TikTok Shop",f_market_o2:"Shopify / eigener Shop",f_market_o3:"Andere Plattform",f_market_o4:"Noch keiner",
+    f_other:"Welche Plattform(en)?",f_other_ph:"z. B. eBay, Kaufland, Etsy …",
+    f_count:"Wie viele Listings?",f_count_o1:"1–5",f_count_o2:"6–20",f_count_o3:"21–50",f_count_o4:"50+",
+    f_consent:'Ich bin einverstanden, dass Riverland mich zu meiner Anfrage kontaktiert. Mehr in der <a href="datenschutz.html" target="_blank" id="privacyLink">Datenschutzerklärung</a>.',
+    f_submit:"Platz anfragen",f_note:"Wir geben deine Daten nicht weiter. Abmeldung jederzeit möglich.",
+    ok_h:"Anfrage erhalten.",ok_p:"Danke. Wir melden uns in Kürze persönlich bei dir.",
+    foot_tag:"Verkaufsstarke Listings in nativem Deutsch — Text und Premium-Bildwelt.",
+    foot_hq:"Hauptsitz",foot_wh:"Lager & Logistik",foot_wh_fn:"Versand & Fulfillment in ganz Europa.",
+    imp_kicker:"Impressum",imp_provider:"Anbieter",imp_register:"Handelsregister",imp_repr:"Vertreten durch",
+    imp_contact:"Kontakt",imp_vat:"Umsatzsteuer-ID",imp_vat_p:"USt-IdNr. gemäß § 27 a UStG:",
+    imp_adr:"Verbraucherstreitbeilegung",imp_adr_p:"Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+    foot_rights:"Alle Rechte vorbehalten.",foot_privacy:"Datenschutz",foot_imprint:"Impressum",
+    pp_h:"Datenschutz — Platz-Anfrage",pp_intro:"Hier siehst du, was mit den Daten passiert, die du über das Anfrage-Formular sendest.",
+    pp_1t:"Verantwortlich",pp_2t:"Welche Daten",pp_2p:"Name, E-Mail-Adresse und deine Angaben zu Marktplatz und Listing-Anzahl.",
+    pp_3t:"Zweck & Rechtsgrundlage",pp_3p:"Wir nutzen die Daten ausschließlich, um deine Anfrage zu bearbeiten (Einwilligung, Art. 6 Abs. 1 lit. a DSGVO). Die Übermittlung erfolgt über unseren Formular-Dienstleister.",
+    pp_4t:"Deine Rechte",pp_4p:"Du kannst deine Einwilligung jederzeit per E-Mail widerrufen und Auskunft, Berichtigung oder Löschung verlangen.",
+    pp_note:"Hinweis: Diese Kurzfassung ersetzt keine vollständige Datenschutzerklärung. Vor dem Live-Gang von einem Profi prüfen lassen."
+  },
+  en:{
+    nav_service:"Service",nav_how:"Process",nav_why:"Why us",nav_pricing:"Pricing",nav_contact:"Contact",nav_cta:"Request a slot",
+    pr_kicker:"Pricing & booking",pr_h2:"Book directly — or <em>test</em> first.",
+    pr_sub:"Transparent per-listing tiers: the more listings, the lower the price. Not sure yet? Start with a single trial listing.",
+    badge_popular:"Popular",per:"/ listing",total_s:"total",book:"Book",book_trial:"Book trial",
+    trial_bar_q:"Prefer to test first?",trial_bar_p:"1 trial listing for €99 — credited to your first order.",
+    bon_h:"Included on top",bon1:"Competitor teardown",bon2:"Compliance check (GPSR)",bon3:"Source image files",
+    gar_txt:"<strong>Risk-free:</strong> if you don't like the sample, you pay nothing. Plus: native-German guarantee and revisions until you approve.",
+    t_s_n:"Starter",t_s_s:"5 listings",t_g_n:"Growth",t_g_s:"10 listings",t_sc_n:"Scale",t_sc_s:"20 listings",
+    li_copy:"Title, bullets & description",li_imgs:"Seven premium images",li_research:"Keyword research + German QA",
+    sales_q:"More than 20 listings?",sales_p:"For 50, 100 or ongoing volume we'll prepare a custom quote.",sales_btn:"Contact sales",
+    f_paket:"Preferred package",f_paket_o0:"Undecided",f_paket_o1:"Trial – 1 listing (€99)",f_paket_o2:"Starter – 5 listings",f_paket_o3:"Growth – 10 listings",f_paket_o4:"Scale – 20 listings",f_paket_o5:"50+ (custom)",
+    hero_eyebrow:"Riverland Studio",anim_label:"From photo + specs to a finished listing",
+    ck_title:"Title",ck_bullets:"Bullet points",ck_images:"Images",ck_desc:"Description",
+    svc_h:"And after that: continuously optimized.",svc1_t:"SEO & keyword optimization",svc1_p:"The right keywords — visible in the copy and in the backend.",svc2_t:"Monthly care & updates",svc2_p:"We review your listing every month and update copy, keywords and images when needed.",svc_badge:"Care plan · flat monthly fee",
+    hero_h1:"Turn your products into more <em>revenue</em>.",
+    hero_lead:"Between your product and the sale there's often just one thing: <strong>a weak listing</strong>. We create listings that turn visitors into buyers — copy and sales images, native German, in two business days.",
+    hero_cta1:"Request a slot",hero_cta2:"See how it works",
+    slots_live:"Limited capacity · updated continuously",
+    slots_note:"We take on only a limited number of new clients each month — because every listing passes our German endcontrol.",
+    prob_kicker:"The problem",
+    prob_h2:"The click is there. With a weak listing, the <em>sale</em> isn't.",
+    prob_sub:"Good products lose sales every day to lazy listings — weak photos, translated-sounding copy, no structure. Drag the slider.",
+    ba_before:"Before",ba_after:"After",
+    ba_before_title:"Stainless steel water bottle 500ml",
+    ba_before_b1:"500 ml, stainless steel",ba_before_b2:"various colours",
+    ba_after_title:"KAUBOI Stainless Steel Water Bottle 500 ml — leak-proof, BPA-free, keeps cold 24 h",
+    ba_after_b1:"100% leak-proof — not a drop in your bag",
+    ba_after_b2:"Keeps drinks cold 24 h / hot 12 h (double wall)",
+    ba_after_b3:"BPA-free, taste-neutral, dishwasher-safe",
+    ba_cap_l:"Sales-ready listing",ba_cap_r:"Raw phone photo + notes",
+    del_kicker:"What you get",del_h2:"A complete listing — from one <em>source</em>.",
+    del1_t:"Keyword title",del1_p:"An optimized title that gets found and earns the click.",
+    del2_t:"5 bullet points",del2_p:"Benefit-driven — not just features, but reasons to buy.",
+    del3_t:"Description",del3_p:"Detailed, scannable, persuasive — clean, native German.",
+    del4_t:"Premium image suite",del4_p:"Seven high-quality product images — infographics that inform, build trust and dissolve buying objections.",
+    del5_t:"Keyword research",del5_p:"Researched per product — plus backend search terms for visibility.",
+    del6_t:"German QA",del6_p:"Every listing is checked by a German pro before delivery.",
+    how_kicker:"The process",how_h2:"Three steps. Your effort: two <em>minutes</em>.",
+    how1_t:"You send us the product",how1_p:"2–3 photos (phone is fine) and a few key specs — name, dimensions, highlights.",
+    how2_t:"We build the listing",how2_p:"Research, copy and images — checked by a German e-commerce operator.",
+    how3_t:"Ready in 2 business days",how3_p:"A sales-ready listing, copy-paste ready for Amazon or Shopify.",
+    why_kicker:"Why Riverland",why_h2:"Tailor-made — not off the <em>shelf</em>.",
+    why_sub:"Every listing is built individually for your product and your brand. With 7+ years of experience creating product listings for Amazon.de, we know how a listing has to read to actually sell in Germany.",
+    why1_t:"Native German, no translation sound",why1_p:"German buyers spot machine translation in two seconds — and bounce.",
+    why2_t:"Tailor-made for your product",why2_p:"No off-the-shelf template — each listing is researched and written individually for you.",
+    why3_t:"Copy and visuals from one team",why3_p:"No juggling a copywriter and a designer — one contact, one result.",
+    why4_t:"Serial production — many listings, same quality",why4_p:"A dialed-in system delivers your whole catalog fast and consistently — no quality drop at volume.",
+    stat1:"years of Amazon.de experience",stat2:"German endcontrol",stat3:"business days per listing",stat4:"channels: Amazon · Shopify · TikTok · OTTO",
+    exp_label:"Our fields of expertise",exp1:"Native-German copywriting",exp2:"Keyword & SEO research",exp3:"A+ Content / EBC",exp4:"Infographics & imagery",exp5:"Product-photo editing",exp6:"Multi-channel (Amazon · Shopify · TikTok)",exp7:"GPSR compliance",
+    proof_label:"A selection from our production",
+    proof_c1:"Personalised stainless-steel jewellery",
+    proof_c2:"Korean snacks & food",
+    req_kicker:"Open slots",req_h2:"Claim a slot as a <em>new client</em>.",
+    req_sub:'We take on only <span class="hl" data-slot-free></span> new clients per month — because every listing passes our German endcontrol. So every listing gets the quality it deserves. Allocated in order of requests.',
+    req_perk1:"Direct onboarding slot — one of the 8 per month",
+    req_perk2:"A one-time sample listing for your weakest product",
+    req_perk4:"Personal attention — never mass-produced",
+    f_company:"Company name",f_company_ph:"Your company name",f_email:"Email",f_email_ph:"you@example.com",
+    f_market:"Where do you sell? (multiple)",f_market_o1:"Amazon.de",f_market_tt:"TikTok Shop",f_market_o2:"Shopify / own shop",f_market_o3:"Other platform",f_market_o4:"None yet",
+    f_other:"Which platform(s)?",f_other_ph:"e.g. eBay, Kaufland, Etsy …",
+    f_count:"How many listings?",f_count_o1:"1–5",f_count_o2:"6–20",f_count_o3:"21–50",f_count_o4:"50+",
+    f_consent:'I agree that Riverland may contact me about my request. More in the <a href="datenschutz.html" target="_blank" id="privacyLink">privacy notice</a>.',
+    f_submit:"Request a slot",f_note:"We never share your data. Unsubscribe any time.",
+    ok_h:"Request received.",ok_p:"Thanks. We'll be in touch personally very soon.",
+    foot_tag:"High-converting listings in native German — copy and premium imagery.",
+    foot_hq:"Headquarters",foot_wh:"Warehouse & logistics",foot_wh_fn:"Shipping & fulfillment across Europe.",
+    imp_kicker:"Imprint",imp_provider:"Provider",imp_register:"Commercial register",imp_repr:"Represented by",
+    imp_contact:"Contact",imp_vat:"VAT ID",imp_vat_p:"VAT ID under § 27 a German VAT Act:",
+    imp_adr:"Consumer dispute resolution",imp_adr_p:"We are neither willing nor obliged to take part in dispute resolution proceedings before a consumer arbitration board.",
+    foot_rights:"All rights reserved.",foot_privacy:"Privacy",foot_imprint:"Imprint",
+    pp_h:"Privacy — Slot request",pp_intro:"Here's what happens with the data you send via the request form.",
+    pp_1t:"Controller",pp_2t:"What data",pp_2p:"Name, email address and your marketplace / listing-count selections.",
+    pp_3t:"Purpose & legal basis",pp_3p:"We use the data only to handle your request (consent, Art. 6(1)(a) GDPR). Submission is handled via our form provider.",
+    pp_4t:"Your rights",pp_4p:"You can withdraw your consent any time by email and request access, correction or deletion.",
+    pp_note:"Note: this short version does not replace a full privacy policy. Have a professional review it before going live."
+  }
+};
+
+function slotText(lang){
+  return lang==='de'
+    ? `<b>${SLOTS_FREE}</b> Plätze frei`
+    : `<b>${SLOTS_FREE}</b> slots open`;
+}
+function renderSlots(lang){
+  document.querySelectorAll('[data-slot-count]').forEach(el=>el.innerHTML=slotText(lang));
+  document.querySelectorAll('[data-slot-free]').forEach(el=>el.textContent=SLOTS_FREE);
+  document.querySelectorAll('[data-slot-form]').forEach(el=>{
+    el.textContent = lang==='de'
+      ? `Aktuell ${SLOTS_FREE} Plätze frei`
+      : `Currently ${SLOTS_FREE} slots open`;
+  });
+  document.querySelectorAll('[data-slot-note]').forEach(el=>{
+    el.textContent = lang==='de'
+      ? `Wir nehmen pro Monat nur eine begrenzte Zahl neuer Kunden an — weil jedes Listing durch unsere deutsche Endkontrolle läuft. Aktuell noch ${SLOTS_FREE} Plätze frei.`
+      : `We take on only a limited number of new clients each month — because every listing passes our German endcontrol. Right now ${SLOTS_FREE} slots left.`;
+  });
+  document.querySelectorAll('[data-gauge]').forEach(g=>{
+    if(g.childElementCount) return;
+    for(let i=0;i<SLOTS_TOTAL;i++){
+      const s=document.createElement('div');
+      s.className='seg'+(i<SLOTS_FREE?' free':'');
+      g.appendChild(s);
+    }
+  });
+}
+
+function setLang(lang){
+  document.documentElement.lang=lang;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.getAttribute('data-i18n'); if(I18N[lang][k]!=null) el.innerHTML=I18N[lang][k];
+  });
+  document.querySelectorAll('[data-i18n-ph]').forEach(el=>{
+    const k=el.getAttribute('data-i18n-ph'); if(I18N[lang][k]!=null) el.placeholder=I18N[lang][k];
+  });
+  document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===lang));
+  renderSlots(lang);
+  bindPrivacy();
+  try{localStorage.setItem('rl_lang',lang)}catch(e){}
+}
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+let startLang='de';
+try{startLang=localStorage.getItem('rl_lang')||((navigator.language||'de').startsWith('de')?'de':'en')}catch(e){}
+setLang(startLang);
+
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+/* header solidifies on scroll, blends into hero at top */
+const hdr=document.querySelector('header');
+const onScroll=()=>hdr.classList.toggle('scrolled',window.scrollY>24);
+window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+/* before/after */
+const ba=document.getElementById('ba'), range=document.getElementById('baRange');
+function upd(v){ba.style.setProperty('--pos',v+'%');
+  ba.querySelector('.ba-divider').style.left=v+'%'; ba.querySelector('.ba-handle').style.left=v+'%';}
+range.addEventListener('input',e=>upd(e.target.value)); upd(66);
+
+/* reveal — auto-tag every section's content so the effect is site-wide */
+(function(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var blocks = document.querySelectorAll('section, footer');
+  blocks.forEach(function(sec,si){
+    if(si===0) return;                                   // hero already has its own animation
+    var wrap = sec.querySelector('.wrap') || sec;
+    Array.prototype.forEach.call(wrap.children, function(child){
+      if(child.classList.contains('reveal')) return;     // already reveals
+      if(child.querySelector('.reveal')) return;          // holds inner reveals already
+      child.classList.add('reveal');
+    });
+  });
+  if(reduce){ document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');}); return; }
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12, rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+})();
+
+/* lightbox — click a proof image to enlarge */
+(function(){
+  var lb=document.getElementById('lightbox'), lbImg=document.getElementById('lbImg'), lbClose=document.getElementById('lbClose');
+  if(!lb) return;
+  function open(src,alt){ lbImg.src=src; lbImg.alt=alt||''; lb.classList.add('show'); document.body.style.overflow='hidden'; }
+  function close(){ lb.classList.remove('show'); document.body.style.overflow=''; lbImg.src=''; }
+  document.querySelectorAll('.proof-grid img').forEach(function(img){
+    img.addEventListener('click',function(){ open(img.currentSrc||img.src, img.alt); });
+  });
+  lb.addEventListener('click',function(e){ if(e.target===lb||e.target===lbClose) close(); });
+  lbClose.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&lb.classList.contains('show')) close(); });
+})();
+
+/* hero build animation (build → flip to description → loop) */
+(function(){
+  const root=document.getElementById('buildAnim'); if(!root) return;
+  const thumbs=[...root.querySelectorAll('.b-thumb')];
+  const chips=[...root.querySelectorAll('.b-chip')];
+  const bullets=[...root.querySelectorAll('.b-front .b-bul li')];
+  const imgs=[...root.querySelectorAll('.b-imgs i')];
+  const tt=root.querySelector('.b-tt'), cur=root.querySelector('.cursor');
+  const flip=root.querySelector('.b-flip'), dsc=root.querySelector('.b-desc-front');
+  const svcRows=[...root.querySelectorAll('.svc-row')];
+  const check=id=>{const el=document.querySelector('#buildCheck [data-ck="'+id+'"]'); if(el)el.classList.add('done');};
+  const uncheckAll=()=>document.querySelectorAll('#buildCheck li').forEach(l=>l.classList.remove('done'));
+  const TITLE="Damen Armband mit Gravur – Personalisiertes Edelstahl-Armband – Lasergravur mit Text & Emoji – Made in Germany – GravurenKing";
+  const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce){[...thumbs,...chips,...imgs,...bullets].forEach(x=>x.classList.add('in'));if(dsc)dsc.classList.add('in');svcRows.forEach(r=>r.classList.add('svcdone'));tt.textContent=TITLE;if(cur)cur.style.display='none';['title','bullets','desc','images'].forEach(check);return;}
+  let paused=false;
+  root.addEventListener('mouseenter',()=>{paused=true;});
+  root.addEventListener('mouseleave',()=>{paused=false;});
+  // pausable sleep: countdown freezes while hovered
+  const sleep=ms=>new Promise(resolve=>{let rem=ms;const step=50;const id=setInterval(()=>{if(paused)return;rem-=step;if(rem<=0){clearInterval(id);resolve();}},step);});
+  let started=false;
+  async function loop(){
+    while(true){
+      flip.classList.remove('flipped'); uncheckAll(); svcRows.forEach(r=>r.classList.remove('svcdone'));
+      [...thumbs,...chips,...imgs,...bullets].forEach(x=>x.classList.remove('in')); if(dsc)dsc.classList.remove('in'); tt.textContent='';
+      await sleep(550);
+      for(const t of thumbs){t.classList.add('in'); await sleep(150);}
+      for(const c of chips){c.classList.add('in'); await sleep(140);}
+      await sleep(360);
+      for(let i=0;i<=TITLE.length;i+=2){tt.textContent=TITLE.slice(0,i); await sleep(9);}   // copy first: title
+      tt.textContent=TITLE;
+      check('title');
+      await sleep(220);
+      for(const b of bullets){b.classList.add('in'); await sleep(130);}                       // bullets
+      check('bullets');
+      await sleep(200);
+      if(dsc)dsc.classList.add('in');                                                          // description
+      check('desc');
+      await sleep(320);
+      for(const im of imgs){im.classList.add('in'); await sleep(80);}                          // then images (left rail)
+      check('images');
+      await sleep(2300);
+      flip.classList.add('flipped');   // flip to ongoing-service side (same-size card)
+      await sleep(750);
+      for(const r of svcRows){ r.classList.add('svcdone'); await sleep(650); }   // tick the 2 services sequentially
+      await sleep(2400);
+      flip.classList.remove('flipped');
+      await sleep(900);
+    }
+  }
+  const io2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting&&!started){started=true;loop();}}),{threshold:.2});
+  io2.observe(root);
+})();
+
+/* privacy modal */
+const modal=document.getElementById('privacyModal');
+function openModal(e){if(e)e.preventDefault();modal.classList.add('show')}
+function bindPrivacy(){}   /* legal links now navigate to impressum.html / datenschutz.html */
+document.getElementById('modalClose').onclick=()=>modal.classList.remove('show');
+modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('show')});
+
+/* reveal optional "other platform" input */
+const chkOther=document.getElementById('chkOther'), otherWrap=document.getElementById('otherWrap');
+chkOther.addEventListener('change',()=>{otherWrap.style.display=chkOther.checked?'block':'none';});
+
+/* ===== deliverable example modal ===== */
+const EXC={de:{cta:'Platz anfragen',sample:'Beispiel aus einem echten Listing:'},
+            en:{cta:'Request a slot',sample:'Example from a real listing:'}};
+function exData(type,lang){
+  const de=lang==='de';
+  const D={
+    title:{tag:de?'01 · Keyword-Titel':'01 · Keyword title',
+      title:de?'Ein Titel, den wir geschrieben haben':'A title we wrote',
+      body:`<p class="ex-lead">${EXC[lang].sample}</p>
+        <div class="ex-listing"><div class="ex-ttl">Damen Armband mit Gravur – Personalisiertes Edelstahl-Armband | Lasergravur mit Text, Namen &amp; Emoji | Hochglanz, rost- &amp; nickelfrei | Made in Germany – GravurenKing</div></div>
+        <div class="ex-note">${de?'Marke + Produkt + Personalisierung + Material + Hauptnutzen — in der Reihenfolge, die Amazon und Käufer belohnen.':'Brand + product + personalisation + material + key benefit — in the order Amazon and buyers reward.'}</div>`},
+    bullets:{tag:de?'02 · 5 Bullet Points':'02 · 5 bullet points',
+      title:de?'Fünf Bullets, die verkaufen':'Five bullets that sell',
+      body:`<ul class="ex-bul">
+        <li><b>BESONDERS:</b> Edles Hochglanz-Finish aus Edelstahl – zeitlos glänzend, angenehm leicht und hautfreundlich am Handgelenk</li>
+        <li><b>PRAKTISCH:</b> Maßgenau angepasst mit sicherem Karabinerverschluss – einfach anlegen, sofort tragen, kein Nachstellen nötig</li>
+        <li><b>QUALITÄT:</b> Klassisches Damen-Armband aus Deutschland – präzise Lasergravur, made in Germany, höchste Verarbeitungsqualität</li>
+        <li><b>HIGHLIGHT:</b> Gravurfläche 40×7&nbsp;mm für Texte und Emojis – individuelle Fonts wählbar, kein Schmuck wie jeder andere: UNIKAT</li>
+        <li><b>INHALT:</b> 1 Armband, personalisiert nach Wunsch</li></ul>
+        <div class="ex-note">${de?'Nutzen zuerst, Detail danach — jeder Punkt beantwortet eine konkrete Kauffrage.':'Benefit first, detail second — each point answers a real buying question.'}</div>`},
+    desc:{tag:de?'03 · Beschreibung':'03 · Description',
+      title:de?'Eine Beschreibung, die führt':'A description that guides',
+      body:`<div class="ex-listing"><p style="font-size:13.5px;line-height:1.65;color:var(--ink)"><b>Ein Armband, das genau so einzigartig ist wie die Person, die es trägt.</b><br><br>Das GravurenKing Damen-Armband aus hochwertigem Edelstahl verbindet klares Design mit echter Individualität. Auf einer Gravierfläche von 40×7&nbsp;mm wird per präziser Lasergravur dein Text und Emoji dauerhaft eingebracht – scharf, tief und wischfest. Der Hochglanz-Finish gibt dem Armband einen edlen, zeitlosen Look, der zu Alltag und besonderen Anlässen gleichermaßen passt. Der sichere Karabinerverschluss wird auf die gewünschte Länge eingestellt – so sitzt es von Anfang an perfekt.<br><br>Ob als Geschenk zur Geburt, zum Geburtstag, zur Hochzeit oder einfach als persönliches Accessoire für sich selbst – dieses Armband ist kein Massenprodukt vom Haken, sondern ein Stück, das deine Geschichte trägt. Wer jemandem etwas Bleibendes schenken möchte, findet hier die richtige Antwort.<br><br><b>✨ WAS DICH ERWARTET</b><br>• Die Lasergravur ist dauerhaft und verblasst nicht – Text, Icons und Emojis werden präzise und detailgetreu eingearbeitet.<br>• Die Gravierfläche misst 40×7&nbsp;mm und bietet damit genug Raum für Namen, Koordinaten, Jahreszahlen oder kurze Widmungen.<br>• Verschiedene Schriftarten stehen zur Auswahl – so passt der Stil der Gravur zum Charakter des Armbands und der Person.<br>• Edelstahl ist rostfrei, nickelfrei und hautfreundlich – ideal auch für empfindliche Haut und tägliches Tragen.<br><br><b>📦 INHALT &amp; DETAILS</b><br>• Inhalt: 1 personalisiertes Damen-Armband<br>• Herkunft: Deutschland – Qualitätsgravur aus deutscher Produktion<br>• Marke: GravurenKing<br>• Material: Hochwertiger Edelstahl mit Hochglanz-Finish</p></div>
+        <div class="ex-note">${de?'Scanbar geschrieben, mit den Keywords, die ranken — ohne übersetzt zu klingen.':'Written to be scanned, with the keywords that rank — never translation-sounding.'}</div>`},
+    images:{tag:de?'04 · Premium-Bildwelt':'04 · Premium image suite',
+      title:de?'Die komplette Bildwelt eines Listings':'The full image suite of a listing',
+      body:`<div class="ex-imgs">
+        <div class="ex-ph" style="background-image:url('assets/gk1.jpg');background-size:cover;background-position:center"></div>
+        <div class="ex-ph" style="background-image:url('assets/gk2.jpg');background-size:cover;background-position:center"></div>
+        <div class="ex-ph" style="background-image:url('assets/gk3.jpg');background-size:cover;background-position:center"></div>
+        <div class="ex-ph" style="background-image:url('assets/gk4.jpg');background-size:cover;background-position:center"></div>
+        <div class="ex-ph" style="background-image:url('assets/gk5.jpg');background-size:cover;background-position:center"></div></div>
+        <div class="ex-note">${de?'Verkaufsstarke Bilder — vom Hauptbild über Lifestyle bis zur Infografik.':'High-converting images — from hero shot through lifestyle to infographic.'}</div>`},
+    keywords:{tag:de?'05 · Keyword-Recherche':'05 · Keyword research',
+      title:de?'Recherche, die gefunden wird':'Research that gets found',
+      body:`<div class="ex-sub">${de?'Haupt-Keywords':'Primary keywords'}</div>
+        <div class="ex-tags"><span>armband mit gravur</span><span>personalisiertes armband damen</span><span>edelstahl armband gravur</span><span>namensarmband</span><span>gravur armband geschenk</span></div>
+        <div class="ex-sub">${de?'Backend-Suchbegriffe':'Backend search terms'}</div>
+        <div class="ex-tags"><span>id armband damen</span><span>armband personalisiert edelstahl</span><span>gravur schmuck frau</span><span>geschenk geburtstag armband</span></div>
+        <div class="ex-note">${de?'Pro Produkt recherchiert — sichtbar in Titel und Bullets, unsichtbar im Backend für maximale Reichweite.':'Researched per product — visible in title and bullets, invisible in the backend for maximum reach.'}</div>`},
+    qa:{tag:de?'06 · Deutsche QA':'06 · German QA',
+      title:de?'Geprüft von einem deutschen Profi':'Checked by a German pro',
+      body:`<div class="ex-photo">${de?'📷 Foto: Pascal beim finalen Review (hier dein Bild einsetzen — /assets/qa-review.jpg)':'📷 Photo: Pascal at the final review (add your image here — /assets/qa-review.jpg)'}</div>
+        <p class="ex-lead" style="margin-top:14px">${de?'Jedes Listing geht vor Auslieferung durch ein deutsches Muttersprachler-Auge: Klingt der Text natürlich? Stimmen Keywords, Fakten und Ton? Erst wenn es sitzt, liefern wir aus.':'Every listing passes a native German eye before delivery: does it read naturally? Are keywords, facts and tone right? Only then do we ship.'}</p>
+        <div class="ex-note">${de?'Genau das ist der Unterschied zu Maschinenübersetzung und Billig-Anbietern.':'This is exactly what sets us apart from machine translation and cheap providers.'}</div>`}
+  };
+  return D[type];
+}
+const exModal=document.getElementById('exModal');
+function openEx(type){
+  const lang=document.documentElement.lang, d=exData(type,lang);
+  document.getElementById('exTag').textContent=d.tag;
+  document.getElementById('exTitle').textContent=d.title;
+  document.getElementById('exBody').innerHTML=d.body;
+  document.getElementById('exCtaBtn').textContent=EXC[lang].cta;
+  exModal.classList.add('show');
+}
+document.querySelectorAll('.cell[data-ex]').forEach(c=>{
+  c.addEventListener('click',()=>openEx(c.dataset.ex));
+  c.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openEx(c.dataset.ex);}});
+});
+document.getElementById('exClose').onclick=()=>exModal.classList.remove('show');
+document.getElementById('exCtaBtn').addEventListener('click',()=>exModal.classList.remove('show'));
+exModal.addEventListener('click',e=>{if(e.target===exModal)exModal.classList.remove('show')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){exModal.classList.remove('show');document.getElementById('privacyModal').classList.remove('show');}});
+
+/* pricing → preselect package + jump to form */
+document.querySelectorAll('[data-book]').forEach(b=>b.addEventListener('click',()=>{
+  const sel=document.getElementById('paketSel');
+  if(sel){ sel.value=b.dataset.book; sel.style.transition='box-shadow .3s'; sel.style.boxShadow='0 0 0 3px rgba(0,79,255,.18)'; setTimeout(()=>sel.style.boxShadow='',1200); }
+  document.getElementById('platz').scrollIntoView({behavior:'smooth'});
+}));
+
+/* pre-select package from URL (?paket=growth) — used by the email deep-links */
+(function(){
+  const p=new URLSearchParams(location.search).get('paket'); if(!p) return;
+  const map={trial:'Trial (1 Listing)',starter:'Starter (5 Listings)',growth:'Growth (10 Listings)',scale:'Scale (20 Listings)'};
+  const val=map[p.toLowerCase()], sel=document.getElementById('paketSel');
+  if(val&&sel){ sel.value=val; setTimeout(()=>{document.getElementById('platz').scrollIntoView({behavior:'smooth'}); sel.style.transition='box-shadow .3s'; sel.style.boxShadow='0 0 0 3px rgba(0,79,255,.18)'; setTimeout(()=>sel.style.boxShadow='',1400);},400); }
+})();
+
+/* form submit */
+const form=document.getElementById('waitForm');
+form.addEventListener('submit',async(e)=>{
+  e.preventDefault();
+  const btn=form.querySelector('button[type=submit]');
+  const lang=document.documentElement.lang;
+  btn.disabled=true; btn.textContent=lang==='de'?'Senden…':'Sending…';
+  try{
+    const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
+    if(res.ok){form.style.display='none';document.getElementById('successBox').classList.add('show');}
+    else{throw new Error('fail');}
+  }catch(err){
+    btn.disabled=false; btn.textContent=I18N[lang].f_submit;
+    alert(lang==='de'?'Etwas ist schiefgelaufen. Bitte später erneut versuchen oder direkt an office@riverland-int.com mailen.':'Something went wrong. Please try again later or email office@riverland-int.com.');
+  }
+});
+</script>
+</body>
+</html>
